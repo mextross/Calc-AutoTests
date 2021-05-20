@@ -328,3 +328,10 @@ ASALocalRun/
 
 # MFractors (Xamarin productivity tool) working folder 
 .mfractor/
+
+#Cypress
+cypress/videos
+cypress/screenshots
+logs/*
+debug.log
+cypress.env.json
