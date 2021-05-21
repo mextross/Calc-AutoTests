@@ -23,4 +23,5 @@ context('Calculator', () => {
         calcHomePg.clickCalculatorButton();
         calcHomePg.checkResult("3");
     })
+
 })
