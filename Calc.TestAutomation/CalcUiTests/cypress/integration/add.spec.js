@@ -1,7 +1,9 @@
-import 'cypress-iframe'
-var calcHomePg = require("../support/calcPageObjects/calcHomepage")
-
+/**Addition UI tests
+ * Prefix EF: Expected failure of a test due to a defect in the UI
+*/
 Cypress.config('defaultCommandTimeout', 3000);
+
+var calcHomePg = require("../support/calcPageObjects/calcHomepage")
 
 context('Addition', () => {
     beforeEach(() => {
