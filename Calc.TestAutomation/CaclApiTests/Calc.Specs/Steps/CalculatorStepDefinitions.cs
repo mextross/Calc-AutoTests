@@ -14,14 +14,6 @@ namespace Calc.Specs.Steps
         private List<decimal> firstNumbers = new List<decimal>();
         private List<decimal> secondNumbers = new List<decimal>();
         private List<decimal> totals = new List<decimal>();
-        decimal d1;
-        decimal d2;
-
-        double number1;
-        double number2;
-        dynamic expectedResult;
-        dynamic actualResult;
-
         private CalcAPITests calcAPITests;
 
         [Given(@"I have the first number")]

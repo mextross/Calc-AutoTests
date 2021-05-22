@@ -35,11 +35,7 @@ namespace Calc.Specs.Features
         public virtual void FeatureSetup()
         {
             testRunner = TechTalk.SpecFlow.TestRunnerManager.GetTestRunner();
-            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "Calculator", @"![Calculator](https://specflow.org/wp-content/uploads/2020/09/calculator.png)
-Simple calculator for adding **two** numbers
-
-Link to a feature: [Calculator](Calc.Specs/Features/Calculator.feature)
-***Further read***: **[Learn more about how to generate Living Documentation](https://docs.specflow.org/projects/specflow-livingdoc/en/latest/LivingDocGenerator/Generating-Documentation.html)**", ProgrammingLanguage.CSharp, ((string[])(null)));
+            TechTalk.SpecFlow.FeatureInfo featureInfo = new TechTalk.SpecFlow.FeatureInfo(new System.Globalization.CultureInfo("en-US"), "Features", "Calculator", "Simple calculator for adding **two** numbers", ProgrammingLanguage.CSharp, ((string[])(null)));
             testRunner.OnFeatureStart(featureInfo);
         }
         
@@ -78,15 +74,15 @@ Link to a feature: [Calculator](Calc.Specs/Features/Calculator.feature)
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Adding 2 positive numbers")]
+        [NUnit.Framework.DescriptionAttribute("Adding 2 positive integers")]
         [NUnit.Framework.CategoryAttribute("add-api")]
-        public virtual void Adding2PositiveNumbers()
+        public virtual void Adding2PositiveIntegers()
         {
             string[] tagsOfScenario = new string[] {
                     "add-api"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Adding 2 positive numbers", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 10
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Adding 2 positive integers", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 6
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -126,11 +122,7 @@ this.ScenarioInitialize(scenarioInfo);
                             "1"});
                 table1.AddRow(new string[] {
                             "999"});
-                table1.AddRow(new string[] {
-                            "0"});
-                table1.AddRow(new string[] {
-                            "0"});
-#line 11
+#line 7
  testRunner.Given("I have the first number", ((string)(null)), table1, "Given ");
 #line hidden
                 TechTalk.SpecFlow.Table table2 = new TechTalk.SpecFlow.Table(new string[] {
@@ -153,14 +145,10 @@ this.ScenarioInitialize(scenarioInfo);
                             "999"});
                 table2.AddRow(new string[] {
                             "999"});
-                table2.AddRow(new string[] {
-                            "1"});
-                table2.AddRow(new string[] {
-                            "0"});
-#line 24
+#line 20
  testRunner.And("the second number", ((string)(null)), table2, "And ");
 #line hidden
-#line 37
+#line 32
  testRunner.When("both numbers are added", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
                 TechTalk.SpecFlow.Table table3 = new TechTalk.SpecFlow.Table(new string[] {
@@ -183,11 +171,7 @@ this.ScenarioInitialize(scenarioInfo);
                             "1000"});
                 table3.AddRow(new string[] {
                             "1998"});
-                table3.AddRow(new string[] {
-                            "1"});
-                table3.AddRow(new string[] {
-                            "0"});
-#line 38
+#line 33
  testRunner.Then("the answer should be the following", ((string)(null)), table3, "Then ");
 #line hidden
             }
@@ -195,15 +179,15 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Adding 2 negative numbers")]
+        [NUnit.Framework.DescriptionAttribute("Adding 2 negative integers")]
         [NUnit.Framework.CategoryAttribute("add-api")]
-        public virtual void Adding2NegativeNumbers()
+        public virtual void Adding2NegativeIntegers()
         {
             string[] tagsOfScenario = new string[] {
                     "add-api"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Adding 2 negative numbers", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 54
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Adding 2 negative integers", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 48
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -243,11 +227,7 @@ this.ScenarioInitialize(scenarioInfo);
                             "-1"});
                 table4.AddRow(new string[] {
                             "-999"});
-                table4.AddRow(new string[] {
-                            "-0"});
-                table4.AddRow(new string[] {
-                            "-0"});
-#line 55
+#line 49
  testRunner.Given("I have the first number", ((string)(null)), table4, "Given ");
 #line hidden
                 TechTalk.SpecFlow.Table table5 = new TechTalk.SpecFlow.Table(new string[] {
@@ -270,14 +250,10 @@ this.ScenarioInitialize(scenarioInfo);
                             "-999"});
                 table5.AddRow(new string[] {
                             "-999"});
-                table5.AddRow(new string[] {
-                            "-1"});
-                table5.AddRow(new string[] {
-                            "-0"});
-#line 68
+#line 62
  testRunner.And("the second number", ((string)(null)), table5, "And ");
 #line hidden
-#line 81
+#line 75
  testRunner.When("both numbers are added", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
                 TechTalk.SpecFlow.Table table6 = new TechTalk.SpecFlow.Table(new string[] {
@@ -300,11 +276,7 @@ this.ScenarioInitialize(scenarioInfo);
                             "-1000"});
                 table6.AddRow(new string[] {
                             "-1998"});
-                table6.AddRow(new string[] {
-                            "-1"});
-                table6.AddRow(new string[] {
-                            "0"});
-#line 82
+#line 76
  testRunner.Then("the answer should be the following", ((string)(null)), table6, "Then ");
 #line hidden
             }
@@ -312,15 +284,15 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Adding 1 positive and 1 negative number")]
+        [NUnit.Framework.DescriptionAttribute("Adding 1 positive and 1 negative integer")]
         [NUnit.Framework.CategoryAttribute("add-api")]
-        public virtual void Adding1PositiveAnd1NegativeNumber()
+        public virtual void Adding1PositiveAnd1NegativeInteger()
         {
             string[] tagsOfScenario = new string[] {
                     "add-api"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Adding 1 positive and 1 negative number", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 97
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Adding 1 positive and 1 negative integer", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 90
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -360,11 +332,7 @@ this.ScenarioInitialize(scenarioInfo);
                             "-1"});
                 table7.AddRow(new string[] {
                             "999"});
-                table7.AddRow(new string[] {
-                            "-0"});
-                table7.AddRow(new string[] {
-                            "0"});
-#line 98
+#line 91
  testRunner.Given("I have the first number", ((string)(null)), table7, "Given ");
 #line hidden
                 TechTalk.SpecFlow.Table table8 = new TechTalk.SpecFlow.Table(new string[] {
@@ -387,14 +355,10 @@ this.ScenarioInitialize(scenarioInfo);
                             "999"});
                 table8.AddRow(new string[] {
                             "-999"});
-                table8.AddRow(new string[] {
-                            "1"});
-                table8.AddRow(new string[] {
-                            "-0"});
-#line 111
+#line 104
  testRunner.And("the second number", ((string)(null)), table8, "And ");
 #line hidden
-#line 124
+#line 117
  testRunner.When("both numbers are added", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
                 TechTalk.SpecFlow.Table table9 = new TechTalk.SpecFlow.Table(new string[] {
@@ -417,11 +381,7 @@ this.ScenarioInitialize(scenarioInfo);
                             "998"});
                 table9.AddRow(new string[] {
                             "0"});
-                table9.AddRow(new string[] {
-                            "1"});
-                table9.AddRow(new string[] {
-                            "0"});
-#line 125
+#line 118
  testRunner.Then("the answer should be the following", ((string)(null)), table9, "Then ");
 #line hidden
             }
@@ -429,15 +389,15 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Adding 0 and a negative number")]
+        [NUnit.Framework.DescriptionAttribute("Adding 0 and an integer")]
         [NUnit.Framework.CategoryAttribute("add-api")]
-        public virtual void Adding0AndANegativeNumber()
+        public virtual void Adding0AndAnInteger()
         {
             string[] tagsOfScenario = new string[] {
                     "add-api"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Adding 0 and a negative number", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 140
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Adding 0 and an integer", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 132
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -460,7 +420,7 @@ this.ScenarioInitialize(scenarioInfo);
                 TechTalk.SpecFlow.Table table10 = new TechTalk.SpecFlow.Table(new string[] {
                             "Number1"});
                 table10.AddRow(new string[] {
-                            "1"});
+                            "-1"});
                 table10.AddRow(new string[] {
                             "0"});
                 table10.AddRow(new string[] {
@@ -480,8 +440,8 @@ this.ScenarioInitialize(scenarioInfo);
                 table10.AddRow(new string[] {
                             "0"});
                 table10.AddRow(new string[] {
-                            "999"});
-#line 141
+                            "-999"});
+#line 133
  testRunner.Given("I have the first number", ((string)(null)), table10, "Given ");
 #line hidden
                 TechTalk.SpecFlow.Table table11 = new TechTalk.SpecFlow.Table(new string[] {
@@ -493,7 +453,7 @@ this.ScenarioInitialize(scenarioInfo);
                 table11.AddRow(new string[] {
                             "0"});
                 table11.AddRow(new string[] {
-                            "4"});
+                            "-4"});
                 table11.AddRow(new string[] {
                             "0"});
                 table11.AddRow(new string[] {
@@ -508,22 +468,22 @@ this.ScenarioInitialize(scenarioInfo);
                             "100"});
                 table11.AddRow(new string[] {
                             "0"});
-#line 154
+#line 146
  testRunner.And("the second number", ((string)(null)), table11, "And ");
 #line hidden
-#line 167
+#line 159
  testRunner.When("both numbers are added", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
                 TechTalk.SpecFlow.Table table12 = new TechTalk.SpecFlow.Table(new string[] {
                             "Result"});
                 table12.AddRow(new string[] {
-                            "1"});
+                            "-1"});
                 table12.AddRow(new string[] {
                             "2"});
                 table12.AddRow(new string[] {
                             "3"});
                 table12.AddRow(new string[] {
-                            "4"});
+                            "-4"});
                 table12.AddRow(new string[] {
                             "5"});
                 table12.AddRow(new string[] {
@@ -537,8 +497,8 @@ this.ScenarioInitialize(scenarioInfo);
                 table12.AddRow(new string[] {
                             "100"});
                 table12.AddRow(new string[] {
-                            "999"});
-#line 168
+                            "-999"});
+#line 160
  testRunner.Then("the answer should be the following", ((string)(null)), table12, "Then ");
 #line hidden
             }
@@ -546,15 +506,15 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Subtracting 2 numbers")]
-        [NUnit.Framework.CategoryAttribute("subtract")]
-        public virtual void Subtracting2Numbers()
+        [NUnit.Framework.DescriptionAttribute("Adding 2 positive decimals")]
+        [NUnit.Framework.CategoryAttribute("add-api")]
+        public virtual void Adding2PositiveDecimals()
         {
             string[] tagsOfScenario = new string[] {
-                    "subtract"};
+                    "add-api"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Subtracting 2 numbers", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 186
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Adding 2 positive decimals", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 175
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -577,43 +537,25 @@ this.ScenarioInitialize(scenarioInfo);
                 TechTalk.SpecFlow.Table table13 = new TechTalk.SpecFlow.Table(new string[] {
                             "Number1"});
                 table13.AddRow(new string[] {
-                            "1"});
-                table13.AddRow(new string[] {
-                            "-1"});
-                table13.AddRow(new string[] {
-                            "10000"});
-                table13.AddRow(new string[] {
-                            "0"});
-#line 187
+                            "1.5"});
+#line 176
  testRunner.Given("I have the first number", ((string)(null)), table13, "Given ");
 #line hidden
                 TechTalk.SpecFlow.Table table14 = new TechTalk.SpecFlow.Table(new string[] {
                             "Number2"});
                 table14.AddRow(new string[] {
-                            "2"});
-                table14.AddRow(new string[] {
-                            "-2"});
-                table14.AddRow(new string[] {
-                            "999"});
-                table14.AddRow(new string[] {
-                            "1"});
-#line 193
+                            "3.6"});
+#line 182
  testRunner.And("the second number", ((string)(null)), table14, "And ");
 #line hidden
-#line 199
- testRunner.When("both numbers are subtracted", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 186
+ testRunner.When("both numbers are added", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
                 TechTalk.SpecFlow.Table table15 = new TechTalk.SpecFlow.Table(new string[] {
                             "Result"});
                 table15.AddRow(new string[] {
-                            "-1"});
-                table15.AddRow(new string[] {
-                            "1"});
-                table15.AddRow(new string[] {
-                            "9001"});
-                table15.AddRow(new string[] {
-                            "-1"});
-#line 200
+                            "5.1"});
+#line 187
  testRunner.Then("the answer should be the following", ((string)(null)), table15, "Then ");
 #line hidden
             }
@@ -621,15 +563,15 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Multiplying 2 numbers")]
-        [NUnit.Framework.CategoryAttribute("subtract")]
-        public virtual void Multiplying2Numbers()
+        [NUnit.Framework.DescriptionAttribute("Adding 2 negative decimals")]
+        [NUnit.Framework.CategoryAttribute("add-api")]
+        public virtual void Adding2NegativeDecimals()
         {
             string[] tagsOfScenario = new string[] {
-                    "subtract"};
+                    "add-api"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Multiplying 2 numbers", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 209
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Adding 2 negative decimals", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 192
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -652,31 +594,25 @@ this.ScenarioInitialize(scenarioInfo);
                 TechTalk.SpecFlow.Table table16 = new TechTalk.SpecFlow.Table(new string[] {
                             "Number1"});
                 table16.AddRow(new string[] {
-                            "1"});
-                table16.AddRow(new string[] {
-                            "-1"});
-#line 210
+                            "-0.7"});
+#line 193
  testRunner.Given("I have the first number", ((string)(null)), table16, "Given ");
 #line hidden
                 TechTalk.SpecFlow.Table table17 = new TechTalk.SpecFlow.Table(new string[] {
                             "Number2"});
                 table17.AddRow(new string[] {
-                            "2"});
-                table17.AddRow(new string[] {
-                            "-2"});
-#line 214
+                            "-2.8"});
+#line 198
  testRunner.And("the second number", ((string)(null)), table17, "And ");
 #line hidden
-#line 218
- testRunner.When("both numbers are multiplied", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 202
+ testRunner.When("both numbers are added", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
                 TechTalk.SpecFlow.Table table18 = new TechTalk.SpecFlow.Table(new string[] {
                             "Result"});
                 table18.AddRow(new string[] {
-                            "2"});
-                table18.AddRow(new string[] {
-                            "2"});
-#line 219
+                            "-3.5"});
+#line 203
  testRunner.Then("the answer should be the following", ((string)(null)), table18, "Then ");
 #line hidden
             }
@@ -684,15 +620,15 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Dividing 2 numbers")]
-        [NUnit.Framework.CategoryAttribute("subtract")]
-        public virtual void Dividing2Numbers()
+        [NUnit.Framework.DescriptionAttribute("Adding 1 postive and 1 negative decimal")]
+        [NUnit.Framework.CategoryAttribute("add-api")]
+        public virtual void Adding1PostiveAnd1NegativeDecimal()
         {
             string[] tagsOfScenario = new string[] {
-                    "subtract"};
+                    "add-api"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Dividing 2 numbers", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 226
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Adding 1 postive and 1 negative decimal", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 208
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -715,32 +651,958 @@ this.ScenarioInitialize(scenarioInfo);
                 TechTalk.SpecFlow.Table table19 = new TechTalk.SpecFlow.Table(new string[] {
                             "Number1"});
                 table19.AddRow(new string[] {
-                            "2"});
-                table19.AddRow(new string[] {
-                            "-9"});
-#line 227
+                            "-9.5"});
+#line 209
  testRunner.Given("I have the first number", ((string)(null)), table19, "Given ");
 #line hidden
                 TechTalk.SpecFlow.Table table20 = new TechTalk.SpecFlow.Table(new string[] {
                             "Number2"});
                 table20.AddRow(new string[] {
-                            "2"});
-                table20.AddRow(new string[] {
-                            "-3"});
-#line 231
+                            "3.2"});
+#line 214
  testRunner.And("the second number", ((string)(null)), table20, "And ");
 #line hidden
-#line 235
- testRunner.When("both numbers are divided", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line 218
+ testRunner.When("both numbers are added", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
                 TechTalk.SpecFlow.Table table21 = new TechTalk.SpecFlow.Table(new string[] {
                             "Result"});
                 table21.AddRow(new string[] {
-                            "1"});
-                table21.AddRow(new string[] {
-                            "3"});
-#line 236
+                            "-6.3"});
+#line 219
  testRunner.Then("the answer should be the following", ((string)(null)), table21, "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Adding 2 large integers")]
+        [NUnit.Framework.CategoryAttribute("add-api")]
+        public virtual void Adding2LargeIntegers()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "add-api"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Adding 2 large integers", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 225
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+                TechTalk.SpecFlow.Table table22 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Number1"});
+                table22.AddRow(new string[] {
+                            "165168746"});
+                table22.AddRow(new string[] {
+                            "-165168746"});
+                table22.AddRow(new string[] {
+                            "-8643684"});
+#line 226
+ testRunner.Given("I have the first number", ((string)(null)), table22, "Given ");
+#line hidden
+                TechTalk.SpecFlow.Table table23 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Number2"});
+                table23.AddRow(new string[] {
+                            "165466894"});
+                table23.AddRow(new string[] {
+                            "-165466894"});
+                table23.AddRow(new string[] {
+                            "789648353"});
+#line 233
+ testRunner.And("the second number", ((string)(null)), table23, "And ");
+#line hidden
+#line 239
+ testRunner.When("both numbers are added", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+                TechTalk.SpecFlow.Table table24 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Result"});
+                table24.AddRow(new string[] {
+                            "330635640"});
+                table24.AddRow(new string[] {
+                            "-330635640"});
+                table24.AddRow(new string[] {
+                            "781004669"});
+#line 240
+ testRunner.Then("the answer should be the following", ((string)(null)), table24, "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Adding 2 small decimals")]
+        [NUnit.Framework.CategoryAttribute("add-api")]
+        public virtual void Adding2SmallDecimals()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "add-api"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Adding 2 small decimals", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 248
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+                TechTalk.SpecFlow.Table table25 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Number1"});
+                table25.AddRow(new string[] {
+                            "0.000006"});
+#line 249
+ testRunner.Given("I have the first number", ((string)(null)), table25, "Given ");
+#line hidden
+                TechTalk.SpecFlow.Table table26 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Number2"});
+                table26.AddRow(new string[] {
+                            "0.0023"});
+#line 253
+ testRunner.And("the second number", ((string)(null)), table26, "And ");
+#line hidden
+#line 257
+ testRunner.When("both numbers are added", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+                TechTalk.SpecFlow.Table table27 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Result"});
+                table27.AddRow(new string[] {
+                            "0.002306"});
+#line 258
+ testRunner.Then("the answer should be the following", ((string)(null)), table27, "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Subtracting 2 positive integers")]
+        [NUnit.Framework.CategoryAttribute("subtract-api")]
+        public virtual void Subtracting2PositiveIntegers()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "subtract-api"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Subtracting 2 positive integers", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 264
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+                TechTalk.SpecFlow.Table table28 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Number1"});
+                table28.AddRow(new string[] {
+                            "1"});
+                table28.AddRow(new string[] {
+                            "3"});
+                table28.AddRow(new string[] {
+                            "6"});
+                table28.AddRow(new string[] {
+                            "8"});
+                table28.AddRow(new string[] {
+                            "1"});
+                table28.AddRow(new string[] {
+                            "34"});
+                table28.AddRow(new string[] {
+                            "99"});
+                table28.AddRow(new string[] {
+                            "1"});
+#line 265
+ testRunner.Given("I have the first number", ((string)(null)), table28, "Given ");
+#line hidden
+                TechTalk.SpecFlow.Table table29 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Number2"});
+                table29.AddRow(new string[] {
+                            "2"});
+                table29.AddRow(new string[] {
+                            "4"});
+                table29.AddRow(new string[] {
+                            "5"});
+                table29.AddRow(new string[] {
+                            "7"});
+                table29.AddRow(new string[] {
+                            "9"});
+                table29.AddRow(new string[] {
+                            "58"});
+                table29.AddRow(new string[] {
+                            "1"});
+                table29.AddRow(new string[] {
+                            "999"});
+#line 275
+ testRunner.And("the second number", ((string)(null)), table29, "And ");
+#line hidden
+#line 285
+ testRunner.When("both numbers are subtracted", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+                TechTalk.SpecFlow.Table table30 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Result"});
+                table30.AddRow(new string[] {
+                            "-1"});
+                table30.AddRow(new string[] {
+                            "-1"});
+                table30.AddRow(new string[] {
+                            "1"});
+                table30.AddRow(new string[] {
+                            "1"});
+                table30.AddRow(new string[] {
+                            "-8"});
+                table30.AddRow(new string[] {
+                            "-24"});
+                table30.AddRow(new string[] {
+                            "98"});
+                table30.AddRow(new string[] {
+                            "-998"});
+#line 286
+ testRunner.Then("the answer should be the following", ((string)(null)), table30, "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Subtracting 2 negative integers")]
+        [NUnit.Framework.CategoryAttribute("subtract-api")]
+        public virtual void Subtracting2NegativeIntegers()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "subtract-api"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Subtracting 2 negative integers", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 299
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+                TechTalk.SpecFlow.Table table31 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Number1"});
+                table31.AddRow(new string[] {
+                            "-99"});
+                table31.AddRow(new string[] {
+                            "-0"});
+                table31.AddRow(new string[] {
+                            "-1"});
+                table31.AddRow(new string[] {
+                            "-3"});
+                table31.AddRow(new string[] {
+                            "-5"});
+                table31.AddRow(new string[] {
+                            "-8"});
+                table31.AddRow(new string[] {
+                            "-9"});
+                table31.AddRow(new string[] {
+                            "-34"});
+                table31.AddRow(new string[] {
+                            "-99"});
+                table31.AddRow(new string[] {
+                            "-1"});
+#line 300
+ testRunner.Given("I have the first number", ((string)(null)), table31, "Given ");
+#line hidden
+                TechTalk.SpecFlow.Table table32 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Number2"});
+                table32.AddRow(new string[] {
+                            "-99"});
+                table32.AddRow(new string[] {
+                            "-0"});
+                table32.AddRow(new string[] {
+                            "-2"});
+                table32.AddRow(new string[] {
+                            "-4"});
+                table32.AddRow(new string[] {
+                            "-6"});
+                table32.AddRow(new string[] {
+                            "-7"});
+                table32.AddRow(new string[] {
+                            "-1"});
+                table32.AddRow(new string[] {
+                            "-58"});
+                table32.AddRow(new string[] {
+                            "-1"});
+                table32.AddRow(new string[] {
+                            "-99"});
+#line 312
+ testRunner.And("the second number", ((string)(null)), table32, "And ");
+#line hidden
+#line 324
+ testRunner.When("both numbers are subtracted", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+                TechTalk.SpecFlow.Table table33 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Result"});
+                table33.AddRow(new string[] {
+                            "0"});
+                table33.AddRow(new string[] {
+                            "0"});
+                table33.AddRow(new string[] {
+                            "1"});
+                table33.AddRow(new string[] {
+                            "1"});
+                table33.AddRow(new string[] {
+                            "1"});
+                table33.AddRow(new string[] {
+                            "-1"});
+                table33.AddRow(new string[] {
+                            "-8"});
+                table33.AddRow(new string[] {
+                            "24"});
+                table33.AddRow(new string[] {
+                            "-98"});
+                table33.AddRow(new string[] {
+                            "98"});
+#line 325
+ testRunner.Then("the answer should be the following", ((string)(null)), table33, "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Subtracting 1 positive and 1 negative integer")]
+        [NUnit.Framework.CategoryAttribute("subtract-api")]
+        public virtual void Subtracting1PositiveAnd1NegativeInteger()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "subtract-api"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Subtracting 1 positive and 1 negative integer", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 339
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+                TechTalk.SpecFlow.Table table34 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Number1"});
+                table34.AddRow(new string[] {
+                            "1"});
+                table34.AddRow(new string[] {
+                            "-3"});
+                table34.AddRow(new string[] {
+                            "5"});
+                table34.AddRow(new string[] {
+                            "-7"});
+                table34.AddRow(new string[] {
+                            "9"});
+                table34.AddRow(new string[] {
+                            "-34"});
+                table34.AddRow(new string[] {
+                            "99"});
+                table34.AddRow(new string[] {
+                            "-1"});
+                table34.AddRow(new string[] {
+                            "-99"});
+#line 340
+ testRunner.Given("I have the first number", ((string)(null)), table34, "Given ");
+#line hidden
+                TechTalk.SpecFlow.Table table35 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Number2"});
+                table35.AddRow(new string[] {
+                            "-2"});
+                table35.AddRow(new string[] {
+                            "4"});
+                table35.AddRow(new string[] {
+                            "-6"});
+                table35.AddRow(new string[] {
+                            "8"});
+                table35.AddRow(new string[] {
+                            "-1"});
+                table35.AddRow(new string[] {
+                            "58"});
+                table35.AddRow(new string[] {
+                            "-1"});
+                table35.AddRow(new string[] {
+                            "999"});
+                table35.AddRow(new string[] {
+                            "99"});
+#line 352
+ testRunner.And("the second number", ((string)(null)), table35, "And ");
+#line hidden
+#line 364
+ testRunner.When("both numbers are subtracted", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+                TechTalk.SpecFlow.Table table36 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Result"});
+                table36.AddRow(new string[] {
+                            "3"});
+                table36.AddRow(new string[] {
+                            "-7"});
+                table36.AddRow(new string[] {
+                            "11"});
+                table36.AddRow(new string[] {
+                            "-15"});
+                table36.AddRow(new string[] {
+                            "10"});
+                table36.AddRow(new string[] {
+                            "-92"});
+                table36.AddRow(new string[] {
+                            "100"});
+                table36.AddRow(new string[] {
+                            "-1000"});
+                table36.AddRow(new string[] {
+                            "-198"});
+#line 365
+ testRunner.Then("the answer should be the following", ((string)(null)), table36, "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Subtracting 0 and an integer")]
+        [NUnit.Framework.CategoryAttribute("subtract-api")]
+        public virtual void Subtracting0AndAnInteger()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "subtract-api"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Subtracting 0 and an integer", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 378
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+                TechTalk.SpecFlow.Table table37 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Number1"});
+                table37.AddRow(new string[] {
+                            "-1"});
+                table37.AddRow(new string[] {
+                            "0"});
+                table37.AddRow(new string[] {
+                            "3"});
+                table37.AddRow(new string[] {
+                            "0"});
+                table37.AddRow(new string[] {
+                            "5"});
+                table37.AddRow(new string[] {
+                            "0"});
+                table37.AddRow(new string[] {
+                            "7"});
+                table37.AddRow(new string[] {
+                            "0"});
+                table37.AddRow(new string[] {
+                            "9"});
+                table37.AddRow(new string[] {
+                            "0"});
+                table37.AddRow(new string[] {
+                            "-999"});
+                table37.AddRow(new string[] {
+                            "0"});
+#line 379
+ testRunner.Given("I have the first number", ((string)(null)), table37, "Given ");
+#line hidden
+                TechTalk.SpecFlow.Table table38 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Number2"});
+                table38.AddRow(new string[] {
+                            "0"});
+                table38.AddRow(new string[] {
+                            "2"});
+                table38.AddRow(new string[] {
+                            "0"});
+                table38.AddRow(new string[] {
+                            "-4"});
+                table38.AddRow(new string[] {
+                            "0"});
+                table38.AddRow(new string[] {
+                            "6"});
+                table38.AddRow(new string[] {
+                            "0"});
+                table38.AddRow(new string[] {
+                            "8"});
+                table38.AddRow(new string[] {
+                            "0"});
+                table38.AddRow(new string[] {
+                            "100"});
+                table38.AddRow(new string[] {
+                            "0"});
+                table38.AddRow(new string[] {
+                            "-0"});
+#line 393
+ testRunner.And("the second number", ((string)(null)), table38, "And ");
+#line hidden
+#line 407
+ testRunner.When("both numbers are subtracted", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+                TechTalk.SpecFlow.Table table39 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Result"});
+                table39.AddRow(new string[] {
+                            "-1"});
+                table39.AddRow(new string[] {
+                            "-2"});
+                table39.AddRow(new string[] {
+                            "3"});
+                table39.AddRow(new string[] {
+                            "4"});
+                table39.AddRow(new string[] {
+                            "5"});
+                table39.AddRow(new string[] {
+                            "-6"});
+                table39.AddRow(new string[] {
+                            "7"});
+                table39.AddRow(new string[] {
+                            "-8"});
+                table39.AddRow(new string[] {
+                            "9"});
+                table39.AddRow(new string[] {
+                            "-100"});
+                table39.AddRow(new string[] {
+                            "-999"});
+                table39.AddRow(new string[] {
+                            "0"});
+#line 408
+ testRunner.Then("the answer should be the following", ((string)(null)), table39, "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Subtracting 2 positive decimals")]
+        [NUnit.Framework.CategoryAttribute("add-api")]
+        public virtual void Subtracting2PositiveDecimals()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "add-api"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Subtracting 2 positive decimals", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 424
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+                TechTalk.SpecFlow.Table table40 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Number1"});
+                table40.AddRow(new string[] {
+                            "4.6"});
+#line 425
+ testRunner.Given("I have the first number", ((string)(null)), table40, "Given ");
+#line hidden
+                TechTalk.SpecFlow.Table table41 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Number2"});
+                table41.AddRow(new string[] {
+                            "8.2"});
+#line 429
+ testRunner.And("the second number", ((string)(null)), table41, "And ");
+#line hidden
+#line 433
+ testRunner.When("both numbers are added", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+                TechTalk.SpecFlow.Table table42 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Result"});
+                table42.AddRow(new string[] {
+                            "-3.6"});
+#line 434
+ testRunner.Then("the answer should be the following", ((string)(null)), table42, "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Subtracting 2 negative decimals")]
+        [NUnit.Framework.CategoryAttribute("subtract-api")]
+        public virtual void Subtracting2NegativeDecimals()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "subtract-api"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Subtracting 2 negative decimals", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 440
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+                TechTalk.SpecFlow.Table table43 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Number1"});
+                table43.AddRow(new string[] {
+                            "-1.2"});
+#line 441
+ testRunner.Given("I have the first number", ((string)(null)), table43, "Given ");
+#line hidden
+                TechTalk.SpecFlow.Table table44 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Number2"});
+                table44.AddRow(new string[] {
+                            "-8.5"});
+#line 445
+ testRunner.And("the second number", ((string)(null)), table44, "And ");
+#line hidden
+#line 449
+ testRunner.When("both numbers are added", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+                TechTalk.SpecFlow.Table table45 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Result"});
+                table45.AddRow(new string[] {
+                            "-9.7"});
+#line 450
+ testRunner.Then("the answer should be the following", ((string)(null)), table45, "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Subtracting 2 small decimals")]
+        [NUnit.Framework.CategoryAttribute("subtract-api")]
+        public virtual void Subtracting2SmallDecimals()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "subtract-api"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Subtracting 2 small decimals", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 456
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+                TechTalk.SpecFlow.Table table46 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Number1"});
+                table46.AddRow(new string[] {
+                            "0.0008"});
+#line 457
+ testRunner.Given("I have the first number", ((string)(null)), table46, "Given ");
+#line hidden
+                TechTalk.SpecFlow.Table table47 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Number2"});
+                table47.AddRow(new string[] {
+                            "0.002"});
+#line 461
+ testRunner.And("the second number", ((string)(null)), table47, "And ");
+#line hidden
+#line 465
+ testRunner.When("both numbers are added", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+                TechTalk.SpecFlow.Table table48 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Result"});
+                table48.AddRow(new string[] {
+                            "-0.0012"});
+#line 466
+ testRunner.Then("the answer should be the following", ((string)(null)), table48, "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Subtracting 2 large integers")]
+        [NUnit.Framework.CategoryAttribute("subtract-api")]
+        public virtual void Subtracting2LargeIntegers()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "subtract-api"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Subtracting 2 large integers", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 472
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+                TechTalk.SpecFlow.Table table49 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Number1"});
+                table49.AddRow(new string[] {
+                            "-8643684"});
+                table49.AddRow(new string[] {
+                            "8643684"});
+                table49.AddRow(new string[] {
+                            "165466894"});
+#line 473
+ testRunner.Given("I have the first number", ((string)(null)), table49, "Given ");
+#line hidden
+                TechTalk.SpecFlow.Table table50 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Number2"});
+                table50.AddRow(new string[] {
+                            "-789648353"});
+                table50.AddRow(new string[] {
+                            "-789648353"});
+                table50.AddRow(new string[] {
+                            "330635640"});
+#line 479
+ testRunner.And("the second number", ((string)(null)), table50, "And ");
+#line hidden
+#line 485
+ testRunner.When("both numbers are subtracted", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+                TechTalk.SpecFlow.Table table51 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Result"});
+                table51.AddRow(new string[] {
+                            "781004669"});
+                table51.AddRow(new string[] {
+                            "-781004669"});
+                table51.AddRow(new string[] {
+                            "-781004669"});
+                table51.AddRow(new string[] {
+                            "-165168746"});
+#line 486
+ testRunner.Then("the answer should be the following", ((string)(null)), table51, "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Multiplying 2 numbers")]
+        [NUnit.Framework.CategoryAttribute("multiply-api")]
+        public virtual void Multiplying2Numbers()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "multiply-api"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Multiplying 2 numbers", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 497
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+                TechTalk.SpecFlow.Table table52 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Number1"});
+                table52.AddRow(new string[] {
+                            "1"});
+                table52.AddRow(new string[] {
+                            "-1"});
+#line 498
+ testRunner.Given("I have the first number", ((string)(null)), table52, "Given ");
+#line hidden
+                TechTalk.SpecFlow.Table table53 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Number2"});
+                table53.AddRow(new string[] {
+                            "2"});
+                table53.AddRow(new string[] {
+                            "-2"});
+#line 502
+ testRunner.And("the second number", ((string)(null)), table53, "And ");
+#line hidden
+#line 506
+ testRunner.When("both numbers are multiplied", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+                TechTalk.SpecFlow.Table table54 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Result"});
+                table54.AddRow(new string[] {
+                            "2"});
+                table54.AddRow(new string[] {
+                            "2"});
+#line 507
+ testRunner.Then("the answer should be the following", ((string)(null)), table54, "Then ");
+#line hidden
+            }
+            this.ScenarioCleanup();
+        }
+        
+        [NUnit.Framework.TestAttribute()]
+        [NUnit.Framework.DescriptionAttribute("Dividing 2 numbers")]
+        [NUnit.Framework.CategoryAttribute("divide-api")]
+        public virtual void Dividing2Numbers()
+        {
+            string[] tagsOfScenario = new string[] {
+                    "divide-api"};
+            System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Dividing 2 numbers", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+#line 514
+this.ScenarioInitialize(scenarioInfo);
+#line hidden
+            bool isScenarioIgnored = default(bool);
+            bool isFeatureIgnored = default(bool);
+            if ((tagsOfScenario != null))
+            {
+                isScenarioIgnored = tagsOfScenario.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((this._featureTags != null))
+            {
+                isFeatureIgnored = this._featureTags.Where(__entry => __entry != null).Where(__entry => String.Equals(__entry, "ignore", StringComparison.CurrentCultureIgnoreCase)).Any();
+            }
+            if ((isScenarioIgnored || isFeatureIgnored))
+            {
+                testRunner.SkipScenario();
+            }
+            else
+            {
+                this.ScenarioStart();
+                TechTalk.SpecFlow.Table table55 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Number1"});
+                table55.AddRow(new string[] {
+                            "2"});
+                table55.AddRow(new string[] {
+                            "-9"});
+#line 515
+ testRunner.Given("I have the first number", ((string)(null)), table55, "Given ");
+#line hidden
+                TechTalk.SpecFlow.Table table56 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Number2"});
+                table56.AddRow(new string[] {
+                            "2"});
+                table56.AddRow(new string[] {
+                            "-3"});
+#line 519
+ testRunner.And("the second number", ((string)(null)), table56, "And ");
+#line hidden
+#line 523
+ testRunner.When("both numbers are divided", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
+#line hidden
+                TechTalk.SpecFlow.Table table57 = new TechTalk.SpecFlow.Table(new string[] {
+                            "Result"});
+                table57.AddRow(new string[] {
+                            "1"});
+                table57.AddRow(new string[] {
+                            "3"});
+#line 524
+ testRunner.Then("the answer should be the following", ((string)(null)), table57, "Then ");
 #line hidden
             }
             this.ScenarioCleanup();
