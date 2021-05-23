@@ -44,8 +44,8 @@ UI Endpoint: https://calculator-web.azurewebsites.net/
 # Build and Test
  
 #API Framework
-Build: Right click solution CalcApiTests.sln to build solution
-Test: Test - > Test Explorer -> Run All Tests
+- Build: Right click solution CalcApiTests.sln to build solution
+- Test: Test - > Test Explorer -> Run All Tests
 
 #UI Framework
 Build: In Visual Studio code terminal, execute 'npx cypress open'
