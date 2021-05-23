@@ -79,6 +79,6 @@ stages:
       environment: APPDEV
       artifactName: '${{ variables.artifactName }}'
       testdlls: '${{ variables.testDLLs }}'
-      dotNetVersionForAPITests: $(MPTAPIAutoTestDotNetVersion)
+      dotNetVersionForAPITests: $(CALCAPIAutoTestDotNetVersion)
       vsTestPath: $(VSTestPath)
 
