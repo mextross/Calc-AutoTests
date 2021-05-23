@@ -55,6 +55,7 @@ stages:
           displayName: Publish
           inputs:
             command: publish
+            projects: '${{ variables.restoreBuildProjects }}'
             publishWebProjects: False
             arguments: '--configuration $(BuildConfiguration) --output $(build.artifactstagingdirectory)'
 
