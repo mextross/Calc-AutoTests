@@ -13,7 +13,7 @@ Calculator Tests contains two automated test frameworks to test the following ca
 #API Framework
 1. Software dependencies - Right click solution CalcApiTests.sln to restore the following  nuget packages
  - Microsoft.NET.Test.Sdk(16.9.4) - https://www.nuget.org/packages/Microsoft.NET.Test.SDK
- - nunit(3.12.0) - 
+ - nunit(3.12.0) - https://www.nuget.org/packages/NUnit/
  - Nunit3TestAdapter(3.17.0) - https://www.nuget.org/packages/NUnit3TestAdapter
  - SafeNuget(1.0.10) - https://www.nuget.org/packages/SafeNuGet
  - Specflow.NUnit(3.81.4) - https://www.nuget.org/packages/SpecFlow.NUnit
