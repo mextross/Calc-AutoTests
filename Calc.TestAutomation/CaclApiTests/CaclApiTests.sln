@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30320.27
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CaclApiTests", "CaclApiTests\CaclApiTests.csproj", "{6F5F5426-E30D-49E7-B506-918567F10B54}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calc.Specs", "Calc.Specs\Calc.Specs.csproj", "{D85D3478-0FC2-4A5B-BCD6-A8E17C7D08A7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CalcApiTests", "CalcApiTests\CalcApiTests.csproj", "{53CA2FA1-EB29-4A24-92D2-4318003992B9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -13,14 +13,14 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{6F5F5426-E30D-49E7-B506-918567F10B54}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{6F5F5426-E30D-49E7-B506-918567F10B54}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{6F5F5426-E30D-49E7-B506-918567F10B54}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{6F5F5426-E30D-49E7-B506-918567F10B54}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D85D3478-0FC2-4A5B-BCD6-A8E17C7D08A7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D85D3478-0FC2-4A5B-BCD6-A8E17C7D08A7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D85D3478-0FC2-4A5B-BCD6-A8E17C7D08A7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D85D3478-0FC2-4A5B-BCD6-A8E17C7D08A7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{53CA2FA1-EB29-4A24-92D2-4318003992B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{53CA2FA1-EB29-4A24-92D2-4318003992B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{53CA2FA1-EB29-4A24-92D2-4318003992B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{53CA2FA1-EB29-4A24-92D2-4318003992B9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
