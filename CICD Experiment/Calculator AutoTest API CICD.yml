@@ -1,0 +1,84 @@
+# Starter pipeline
+# Start with a minimal pipeline that you can customize to build and deploy your code.
+# Add steps that build, run tests, deploy, and more:
+# https://aka.ms/yaml
+parameters:
+- name: deployEnvironment
+  displayName: Deploy to Environment
+  type: string
+  default: APPDEV
+  values:
+    - APPDEV
+
+trigger:
+  branches:
+      include:
+      - main
+  paths:
+      exclude:
+      - /Calc.TestAutomation/CalcUiTests/*
+     
+variables:
+  artifactName: 'Calc-APIAutoTest'
+  deployTemplate: 'Calc_APIAutoTest_Deploy_Jobs.yml'
+  restoreBuildProjects: |
+      **/CaclApiTests.csproj
+      **/Calc.Specs.csproj
+  testDLLs: |
+      Calc.Specs.dll
+          
+stages:
+# CI / Build
+- stage: CI
+  displayName: CI
+  pool:
+    vmImage: 'windows-latest'
+  jobs:
+    - job: Build
+      displayName: Build AutoTest API
+      steps:
+        - task: DotNetCoreCLI@2
+          displayName: Restore
+          inputs:
+            command: restore
+            projects: '${{ variables.restoreBuildProjects }}'
+            vstsFeed: '170d1d73-6094-4c52-96a3-22eec23f01d1'
+            includeNuGetOrg: true
+
+        - task: DotNetCoreCLI@2
+          displayName: Build
+          inputs:
+            projects: '${{ variables.restoreBuildProjects }}'
+            arguments: '--configuration $(BuildConfiguration) --output $(build.artifactstagingdirectory)'
+
+        - task: CopyFiles@2
+          displayName: 'Copy Files to: $(Build.ArtifactStagingDirectory)'
+          inputs:
+            SourceFolder: '$(Build.SourcesDirectory)/Calc.TestAutomation/CaclApiTests'
+            Contents: '**'
+            TargetFolder: '$(Build.ArtifactStagingDirectory)'
+
+        - task: PublishBuildArtifacts@1
+          displayName: Publish Build Artifact - ${{ variables.artifactName }}
+          inputs:
+            PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+            ArtifactName: '${{ variables.artifactName }}'
+            publishLocation: 'Container'
+            condition: succeeded()
+
+# APPDEV
+- stage: APPDEV
+  displayName: Deploy to APPDEV
+  dependsOn: CI
+  condition: and(succeeded(), eq('${{ parameters.deployEnvironment }}', 'APPDEV'))
+  variables:  
+    - group: CALC_APPDEV
+  jobs:
+  - template: '${{ variables.deployTemplate }}'
+    parameters:
+      environment: APPDEV
+      artifactName: '${{ variables.artifactName }}'
+      testdlls: '${{ variables.testDLLs }}'
+      dotNetVersionForAPITests: $(MPTAPIAutoTestDotNetVersion)
+      vsTestPath: $(VSTestPath)
+
