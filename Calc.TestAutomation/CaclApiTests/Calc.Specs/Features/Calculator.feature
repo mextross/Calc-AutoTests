@@ -556,8 +556,6 @@ Scenario: Multiplying 2 positive Integers
 	|   996004| 
 	
 
-
-		
 @multiply-api
 Scenario: Multiplying 2 negative integers
 	Given I have the first number
@@ -871,7 +869,7 @@ Scenario: Dividing a dividend lesser than a divisor
 
 	
 @divide-api
-Scenario: Dividing Zero by a number
+Scenario: Dividing zero by an integer
 	Given I have the first number
 	| Number1 | 
 	|        0|   
@@ -889,7 +887,7 @@ Scenario: Dividing Zero by a number
 	|        0| 
 
 @divide-api
-Scenario: Divide by zero
+Scenario: Divide integer by zero
 	Given I have the first number
 	| Number1 | 
 	|        1|         

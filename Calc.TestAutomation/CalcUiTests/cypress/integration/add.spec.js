@@ -1,5 +1,5 @@
 /**Addition UI tests
- * Prefix EF: Expected failure of a test due to a defect in the UI
+ * Prefix EF: Expected failure of a test due to a defect
 */
 Cypress.config('defaultCommandTimeout', 3000);
 
