@@ -22,7 +22,7 @@ variables:
   artifactName: 'Calc-APIAutoTest'
   deployTemplate: 'Calc_APIAutoTest_Deploy_Jobs.yml'
   restoreBuildProjects: |
-      **/CaclApiTests.csproj
+      **/CalcApiTests.csproj
       **/Calc.Specs.csproj
   testDLLs: |
       Calc.Specs.dll
