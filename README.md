@@ -10,8 +10,7 @@ The REST API Test Automation Framework is built using Specflow, NUnit and RestSh
    - Clone ADO repo https://Kiwibank@dev.azure.com/Kiwibank/BusApps/_git/CalculatorTests in Visual Studio 2019 IDE
 
 #API Framework
-1. Software dependencies 
- (Right click solution CalcApiTests.sln to restore the following  nuget packages)
+1. Software dependencies - Right click solution CalcApiTests.sln to restore the following  nuget packages
  - Microsoft.NET.Test.Sdk(16.9.4) - https://www.nuget.org/packages/Microsoft.NET.Test.SDK
  - Nunit3TestAdapter(3.17.0) - https://www.nuget.org/packages/NUnit3TestAdapter
  - SafeNuget(1.0.10) - https://www.nuget.org/packages/SafeNuGet
@@ -20,7 +19,7 @@ The REST API Test Automation Framework is built using Specflow, NUnit and RestSh
  - System.Net.Security(4.3.2) - https://www.nuget.org/packages/System.Net.Security
 
 2.	API references
-API Endpoint: https://calculator-api.azurewebsites.net/api/Calculate
+API Endpoint - https://calculator-api.azurewebsites.net/api/Calculate
 
 #UI Framework
 1. Installation process
