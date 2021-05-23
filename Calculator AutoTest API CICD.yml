@@ -70,7 +70,6 @@ stages:
   displayName: Deploy to APPDEV
   dependsOn: CI
   condition: and(succeeded(), eq('${{ parameters.deployEnvironment }}', 'APPDEV'))
-  variables:  
   jobs:
   - template: '${{ variables.deployTemplate }}'
     parameters:
