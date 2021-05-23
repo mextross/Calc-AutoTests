@@ -51,11 +51,6 @@ stages:
             projects: '${{ variables.restoreBuildProjects }}'
             arguments: '--configuration $(BuildConfiguration) --output $(build.artifactstagingdirectory)'
 
-        - task: DotNetCoreCLI@2
-          displayName: Publish
-          inputs:
-            command: publish
-            arguments: '--configuration $(BuildConfiguration) --output $(build.artifactstagingdirectory)'
 
         - task: PublishBuildArtifacts@1
           displayName: Publish Build Artifact - ${{ variables.artifactName }}
