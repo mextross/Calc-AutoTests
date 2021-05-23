@@ -19,7 +19,6 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.9.4" />
-    <PackageReference Include="NUnit3TestAdapter" Version="3.17.0" />
     <PackageReference Include="SafeNuGet" Version="1.0.10" />
     <PackageReference Include="SpecFlow.Plus.LivingDocPlugin" Version="3.8.35" />
 
@@ -29,7 +28,9 @@
 
     
     <PackageReference Include="SpecFlow.NUnit" Version="3.8.14" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.17.0" />
     <PackageReference Include="System.Net.Security" Version="4.3.2" />
+    <PackageReference Include="System.Security.Claims" Version="4.3.0" />
     
 
     

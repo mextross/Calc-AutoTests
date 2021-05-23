@@ -7,19 +7,47 @@ The REST API Test Automation Framework is built using Specflow, NUnit and RestSh
 
 # Getting Started
 1.	Installation process 
-Clone ADO repo
+   - Clone ADO repo https://Kiwibank@dev.azure.com/Kiwibank/BusApps/_git/CalculatorTests in Visual Studio 2019 IDE
 
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+#API Framework
+1. Software dependencies - Right click solution CalcApiTests.sln to restore the following  nuget packages
+ - Microsoft.NET.Test.Sdk(16.9.4) - https://www.nuget.org/packages/Microsoft.NET.Test.SDK
+ - Nunit3TestAdapter(3.17.0) - https://www.nuget.org/packages/NUnit3TestAdapter
+ - SafeNuget(1.0.10) - https://www.nuget.org/packages/SafeNuGet
+ - Specflow.NUnit(3.81.4) - https://www.nuget.org/packages/SpecFlow.NUnit
+ - Specflow.Plus.LivingDocPlugin(3.8.35) - https://www.nuget.org/packages/SpecFlow.Plus.LivingDoc.CLI
+ - System.Net.Security(4.3.2) - https://www.nuget.org/packages/System.Net.Security
+ - System.Security.Claims(4.3.0) - https://www.nuget.org/packages/System.Security.Claims
+
+2.	API references - 
+API Endpoint - https://calculator-api.azurewebsites.net/api/Calculate
+
+#UI Framework
+1. Installation process
+- Remove NPM proxy:
+    - npm config rm proxy
+    - npm config rm https-proxy
+
+- Powershell commands:
+    - env:CYPRESS_INSTALL_BINARY=''
+    - $env:CYPRESS_INSTALL_VERSION=''
+    - $env:NODE_TLS_REJECT_UNAUTHORIZED=0
+    - $env:HTTP_PROXY="http://username:password@kbproxy.corp.bank.nzpfs.co.nz:8080/"
+    - $env:HTTPS_PROXY="http://username:password@kbproxy.corp.bank.nzpfs.co.nz:8080/"
+    - npm install cypress --save-dev
+
+2. Software dependencies
+- Cypress npm module - https://www.npmjs.com/package/cypress
+
+3. UI references
+UI Endpoint: https://calculator-web.azurewebsites.net/
 
 # Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+ 
+#API Framework
+- Build: Right click solution CalcApiTests.sln to build solution
+- Test: Test - > Test Explorer -> Run All Tests
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
-
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+#UI Framework
+- Build: In Visual Studio code terminal, execute 'npx cypress open'
+- Test : Run any of the spec.js files under CalcUiTests/integration under Electron browser
