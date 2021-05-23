@@ -15,7 +15,8 @@ namespace CalcApiTests
         public string authKey;
         public string Operator;
 
-        public CalcAPITests(string Op) {
+        public CalcAPITests(string Op)
+        {
             var builder = new ConfigurationBuilder()
                  .SetBasePath(Directory.GetCurrentDirectory())
                  .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
@@ -27,12 +28,13 @@ namespace CalcApiTests
             Operator = Op;
         }
 
+        /*Triggers the api request and retrieves the response*/
         public decimal Calculate(decimal leftNumber, decimal rightNumber)
         {
             var request = new RestRequest(Method.POST);
             request.AddHeader("x-functions-key", authKey);
             request.RequestFormat = DataFormat.Json;
-            request.AddJsonBody(new { LeftNumber = leftNumber, RightNumber = rightNumber, Operator = this.Operator});
+            request.AddJsonBody(new { LeftNumber = leftNumber, RightNumber = rightNumber, Operator = this.Operator });
             IRestResponse response = client.Execute(request);
             var jObj = JObject.Parse(response.Content);
             string answer = jObj.GetValue("value").ToString();

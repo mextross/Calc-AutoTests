@@ -1538,14 +1538,14 @@ this.ScenarioInitialize(scenarioInfo);
         }
         
         [NUnit.Framework.TestAttribute()]
-        [NUnit.Framework.DescriptionAttribute("Multiplying 2 positive Integers")]
+        [NUnit.Framework.DescriptionAttribute("Multiplying 2 positive integers")]
         [NUnit.Framework.CategoryAttribute("multiply-api")]
         public virtual void Multiplying2PositiveIntegers()
         {
             string[] tagsOfScenario = new string[] {
                     "multiply-api"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
-            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Multiplying 2 positive Integers", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
+            TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Multiplying 2 positive integers", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
 #line 510
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
@@ -1885,7 +1885,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "multiply-api"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Multiplying 0 and an integer", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 637
+#line 638
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -1931,7 +1931,7 @@ this.ScenarioInitialize(scenarioInfo);
                             "-999"});
                 table64.AddRow(new string[] {
                             "0"});
-#line 638
+#line 639
  testRunner.Given("I have the first number", ((string)(null)), table64, "Given ");
 #line hidden
                 TechTalk.SpecFlow.Table table65 = new TechTalk.SpecFlow.Table(new string[] {
@@ -1960,10 +1960,10 @@ this.ScenarioInitialize(scenarioInfo);
                             "0"});
                 table65.AddRow(new string[] {
                             "-0"});
-#line 652
+#line 653
  testRunner.And("the second number", ((string)(null)), table65, "And ");
 #line hidden
-#line 666
+#line 667
  testRunner.When("both numbers are multiplied", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
                 TechTalk.SpecFlow.Table table66 = new TechTalk.SpecFlow.Table(new string[] {
@@ -1992,7 +1992,7 @@ this.ScenarioInitialize(scenarioInfo);
                             "0"});
                 table66.AddRow(new string[] {
                             "0"});
-#line 667
+#line 668
  testRunner.Then("the answer should be the following", ((string)(null)), table66, "Then ");
 #line hidden
             }
@@ -2008,7 +2008,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "multiply-api"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Multiplying 2 positive decimals", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 684
+#line 685
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -2032,24 +2032,24 @@ this.ScenarioInitialize(scenarioInfo);
                             "Number1"});
                 table67.AddRow(new string[] {
                             "1.52"});
-#line 685
+#line 686
  testRunner.Given("I have the first number", ((string)(null)), table67, "Given ");
 #line hidden
                 TechTalk.SpecFlow.Table table68 = new TechTalk.SpecFlow.Table(new string[] {
                             "Number2"});
                 table68.AddRow(new string[] {
                             "3.67"});
-#line 689
+#line 690
  testRunner.And("the second number", ((string)(null)), table68, "And ");
 #line hidden
-#line 693
+#line 694
  testRunner.When("both numbers are multiplied", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
                 TechTalk.SpecFlow.Table table69 = new TechTalk.SpecFlow.Table(new string[] {
                             "Result"});
                 table69.AddRow(new string[] {
                             "5.5784"});
-#line 694
+#line 695
  testRunner.Then("the answer should be the following", ((string)(null)), table69, "Then ");
 #line hidden
             }
@@ -2065,7 +2065,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "multiply-api"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Multiplying 2 negative decimals", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 700
+#line 701
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -2089,24 +2089,24 @@ this.ScenarioInitialize(scenarioInfo);
                             "Number1"});
                 table70.AddRow(new string[] {
                             "-0.7"});
-#line 701
+#line 702
  testRunner.Given("I have the first number", ((string)(null)), table70, "Given ");
 #line hidden
                 TechTalk.SpecFlow.Table table71 = new TechTalk.SpecFlow.Table(new string[] {
                             "Number2"});
                 table71.AddRow(new string[] {
                             "-2.8"});
-#line 706
+#line 707
  testRunner.And("the second number", ((string)(null)), table71, "And ");
 #line hidden
-#line 710
+#line 711
  testRunner.When("both numbers are multiplied", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
                 TechTalk.SpecFlow.Table table72 = new TechTalk.SpecFlow.Table(new string[] {
                             "Result"});
                 table72.AddRow(new string[] {
                             "1.96"});
-#line 711
+#line 712
  testRunner.Then("the answer should be the following", ((string)(null)), table72, "Then ");
 #line hidden
             }
@@ -2122,7 +2122,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "multiply-api"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Multiplying 1 postive and 1 negative decimal", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 716
+#line 717
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -2146,24 +2146,24 @@ this.ScenarioInitialize(scenarioInfo);
                             "Number1"});
                 table73.AddRow(new string[] {
                             "-9.5"});
-#line 717
+#line 718
  testRunner.Given("I have the first number", ((string)(null)), table73, "Given ");
 #line hidden
                 TechTalk.SpecFlow.Table table74 = new TechTalk.SpecFlow.Table(new string[] {
                             "Number2"});
                 table74.AddRow(new string[] {
                             "3.2"});
-#line 720
+#line 721
  testRunner.And("the second number", ((string)(null)), table74, "And ");
 #line hidden
-#line 723
+#line 724
  testRunner.When("both numbers are multiplied", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
                 TechTalk.SpecFlow.Table table75 = new TechTalk.SpecFlow.Table(new string[] {
                             "Result"});
                 table75.AddRow(new string[] {
                             "-30.4"});
-#line 724
+#line 725
  testRunner.Then("the answer should be the following", ((string)(null)), table75, "Then ");
 #line hidden
             }
@@ -2179,7 +2179,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "multiply-api"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Multiplying 2 large integers", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 730
+#line 731
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -2203,24 +2203,24 @@ this.ScenarioInitialize(scenarioInfo);
                             "Number1"});
                 table76.AddRow(new string[] {
                             "86436"});
-#line 731
+#line 732
  testRunner.Given("I have the first number", ((string)(null)), table76, "Given ");
 #line hidden
                 TechTalk.SpecFlow.Table table77 = new TechTalk.SpecFlow.Table(new string[] {
                             "Number2"});
                 table77.AddRow(new string[] {
                             "7896"});
-#line 735
+#line 736
  testRunner.And("the second number", ((string)(null)), table77, "And ");
 #line hidden
-#line 739
+#line 740
  testRunner.When("both numbers are multiplied", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
                 TechTalk.SpecFlow.Table table78 = new TechTalk.SpecFlow.Table(new string[] {
                             "Result"});
                 table78.AddRow(new string[] {
                             "682498656"});
-#line 740
+#line 741
  testRunner.Then("the answer should be the following", ((string)(null)), table78, "Then ");
 #line hidden
             }
@@ -2236,7 +2236,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "multiply-api"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Multiplying 2 large integers ending in zero", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 745
+#line 746
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -2260,24 +2260,24 @@ this.ScenarioInitialize(scenarioInfo);
                             "Number1"});
                 table79.AddRow(new string[] {
                             "864360"});
-#line 746
+#line 747
  testRunner.Given("I have the first number", ((string)(null)), table79, "Given ");
 #line hidden
                 TechTalk.SpecFlow.Table table80 = new TechTalk.SpecFlow.Table(new string[] {
                             "Number2"});
                 table80.AddRow(new string[] {
                             "78960"});
-#line 750
+#line 751
  testRunner.And("the second number", ((string)(null)), table80, "And ");
 #line hidden
-#line 754
+#line 755
  testRunner.When("both numbers are multiplied", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
                 TechTalk.SpecFlow.Table table81 = new TechTalk.SpecFlow.Table(new string[] {
                             "Result"});
                 table81.AddRow(new string[] {
                             "68249865600"});
-#line 755
+#line 756
  testRunner.Then("the answer should be the following", ((string)(null)), table81, "Then ");
 #line hidden
             }
@@ -2293,7 +2293,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "divide-api"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Dividing 2 positive integers with no remainder", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 762
+#line 763
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -2329,7 +2329,7 @@ this.ScenarioInitialize(scenarioInfo);
                             "8"});
                 table82.AddRow(new string[] {
                             "999"});
-#line 763
+#line 764
  testRunner.Given("I have the first number", ((string)(null)), table82, "Given ");
 #line hidden
                 TechTalk.SpecFlow.Table table83 = new TechTalk.SpecFlow.Table(new string[] {
@@ -2348,10 +2348,10 @@ this.ScenarioInitialize(scenarioInfo);
                             "8"});
                 table83.AddRow(new string[] {
                             "999"});
-#line 772
+#line 773
  testRunner.And("the second number", ((string)(null)), table83, "And ");
 #line hidden
-#line 781
+#line 782
  testRunner.When("both numbers are divided", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
                 TechTalk.SpecFlow.Table table84 = new TechTalk.SpecFlow.Table(new string[] {
@@ -2370,7 +2370,7 @@ this.ScenarioInitialize(scenarioInfo);
                             "1"});
                 table84.AddRow(new string[] {
                             "1"});
-#line 782
+#line 783
  testRunner.Then("the answer should be the following", ((string)(null)), table84, "Then ");
 #line hidden
             }
@@ -2386,7 +2386,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "divide-api"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Dividing 2 negative integers with no remainder", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 793
+#line 794
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -2422,7 +2422,7 @@ this.ScenarioInitialize(scenarioInfo);
                             "-8"});
                 table85.AddRow(new string[] {
                             "-999"});
-#line 794
+#line 795
  testRunner.Given("I have the first number", ((string)(null)), table85, "Given ");
 #line hidden
                 TechTalk.SpecFlow.Table table86 = new TechTalk.SpecFlow.Table(new string[] {
@@ -2441,10 +2441,10 @@ this.ScenarioInitialize(scenarioInfo);
                             "-8"});
                 table86.AddRow(new string[] {
                             "-999"});
-#line 803
+#line 804
  testRunner.And("the second number", ((string)(null)), table86, "And ");
 #line hidden
-#line 812
+#line 813
  testRunner.When("both numbers are divided", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
                 TechTalk.SpecFlow.Table table87 = new TechTalk.SpecFlow.Table(new string[] {
@@ -2463,7 +2463,7 @@ this.ScenarioInitialize(scenarioInfo);
                             "1"});
                 table87.AddRow(new string[] {
                             "1"});
-#line 813
+#line 814
  testRunner.Then("the answer should be the following", ((string)(null)), table87, "Then ");
 #line hidden
             }
@@ -2479,7 +2479,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "divide-api"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Dividing 1 positive and negative integer with no remander", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 824
+#line 825
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -2515,7 +2515,7 @@ this.ScenarioInitialize(scenarioInfo);
                             "8"});
                 table88.AddRow(new string[] {
                             "-999"});
-#line 825
+#line 826
  testRunner.Given("I have the first number", ((string)(null)), table88, "Given ");
 #line hidden
                 TechTalk.SpecFlow.Table table89 = new TechTalk.SpecFlow.Table(new string[] {
@@ -2534,10 +2534,10 @@ this.ScenarioInitialize(scenarioInfo);
                             "-8"});
                 table89.AddRow(new string[] {
                             "999"});
-#line 834
+#line 835
  testRunner.And("the second number", ((string)(null)), table89, "And ");
 #line hidden
-#line 843
+#line 844
  testRunner.When("both numbers are divided", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
                 TechTalk.SpecFlow.Table table90 = new TechTalk.SpecFlow.Table(new string[] {
@@ -2556,7 +2556,7 @@ this.ScenarioInitialize(scenarioInfo);
                             "-1"});
                 table90.AddRow(new string[] {
                             "-1"});
-#line 844
+#line 845
  testRunner.Then("the answer should be the following", ((string)(null)), table90, "Then ");
 #line hidden
             }
@@ -2572,7 +2572,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "divide-api"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Dividing a dividend lesser than a divisor", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 855
+#line 856
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -2596,24 +2596,24 @@ this.ScenarioInitialize(scenarioInfo);
                             "Number1"});
                 table91.AddRow(new string[] {
                             "6"});
-#line 856
+#line 857
  testRunner.Given("I have the first number", ((string)(null)), table91, "Given ");
 #line hidden
                 TechTalk.SpecFlow.Table table92 = new TechTalk.SpecFlow.Table(new string[] {
                             "Number2"});
                 table92.AddRow(new string[] {
                             "5"});
-#line 860
+#line 861
  testRunner.And("the second number", ((string)(null)), table92, "And ");
 #line hidden
-#line 864
+#line 865
  testRunner.When("both numbers are divided", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
                 TechTalk.SpecFlow.Table table93 = new TechTalk.SpecFlow.Table(new string[] {
                             "Result"});
                 table93.AddRow(new string[] {
                             "1.2"});
-#line 865
+#line 866
  testRunner.Then("the answer should be the following", ((string)(null)), table93, "Then ");
 #line hidden
             }
@@ -2629,7 +2629,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "divide-api"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Dividing zero by an integer", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 872
+#line 873
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -2655,7 +2655,7 @@ this.ScenarioInitialize(scenarioInfo);
                             "0"});
                 table94.AddRow(new string[] {
                             "0"});
-#line 873
+#line 874
  testRunner.Given("I have the first number", ((string)(null)), table94, "Given ");
 #line hidden
                 TechTalk.SpecFlow.Table table95 = new TechTalk.SpecFlow.Table(new string[] {
@@ -2664,10 +2664,10 @@ this.ScenarioInitialize(scenarioInfo);
                             "1"});
                 table95.AddRow(new string[] {
                             "-2"});
-#line 878
+#line 879
  testRunner.And("the second number", ((string)(null)), table95, "And ");
 #line hidden
-#line 883
+#line 884
  testRunner.When("both numbers are divided", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
                 TechTalk.SpecFlow.Table table96 = new TechTalk.SpecFlow.Table(new string[] {
@@ -2676,7 +2676,7 @@ this.ScenarioInitialize(scenarioInfo);
                             "0"});
                 table96.AddRow(new string[] {
                             "0"});
-#line 884
+#line 885
  testRunner.Then("the answer should be the following", ((string)(null)), table96, "Then ");
 #line hidden
             }
@@ -2692,7 +2692,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "divide-api"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Divide integer by zero", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 890
+#line 891
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -2716,24 +2716,24 @@ this.ScenarioInitialize(scenarioInfo);
                             "Number1"});
                 table97.AddRow(new string[] {
                             "1"});
-#line 891
+#line 892
  testRunner.Given("I have the first number", ((string)(null)), table97, "Given ");
 #line hidden
                 TechTalk.SpecFlow.Table table98 = new TechTalk.SpecFlow.Table(new string[] {
                             "Number2"});
                 table98.AddRow(new string[] {
                             "0"});
-#line 895
+#line 896
  testRunner.And("the second number", ((string)(null)), table98, "And ");
 #line hidden
-#line 899
+#line 900
  testRunner.When("both numbers are divided", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
                 TechTalk.SpecFlow.Table table99 = new TechTalk.SpecFlow.Table(new string[] {
                             "Result"});
                 table99.AddRow(new string[] {
                             "undefined"});
-#line 900
+#line 901
  testRunner.Then("the answer should be the following", ((string)(null)), table99, "Then ");
 #line hidden
             }
@@ -2749,7 +2749,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "divide-api"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Dividing 2 positive decimals", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 906
+#line 907
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -2773,24 +2773,24 @@ this.ScenarioInitialize(scenarioInfo);
                             "Number1"});
                 table100.AddRow(new string[] {
                             "1.5"});
-#line 907
+#line 908
  testRunner.Given("I have the first number", ((string)(null)), table100, "Given ");
 #line hidden
                 TechTalk.SpecFlow.Table table101 = new TechTalk.SpecFlow.Table(new string[] {
                             "Number2"});
                 table101.AddRow(new string[] {
                             "0.5"});
-#line 911
+#line 912
  testRunner.And("the second number", ((string)(null)), table101, "And ");
 #line hidden
-#line 915
+#line 916
  testRunner.When("both numbers are divided", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
                 TechTalk.SpecFlow.Table table102 = new TechTalk.SpecFlow.Table(new string[] {
                             "Result"});
                 table102.AddRow(new string[] {
                             "3"});
-#line 916
+#line 917
  testRunner.Then("the answer should be the following", ((string)(null)), table102, "Then ");
 #line hidden
             }
@@ -2806,7 +2806,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "divide-api"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Dividing 2 negative decimals", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 921
+#line 922
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -2830,24 +2830,24 @@ this.ScenarioInitialize(scenarioInfo);
                             "Number1"});
                 table103.AddRow(new string[] {
                             "-1.5"});
-#line 922
+#line 923
  testRunner.Given("I have the first number", ((string)(null)), table103, "Given ");
 #line hidden
                 TechTalk.SpecFlow.Table table104 = new TechTalk.SpecFlow.Table(new string[] {
                             "Number2"});
                 table104.AddRow(new string[] {
                             "-0.5"});
-#line 926
+#line 927
  testRunner.And("the second number", ((string)(null)), table104, "And ");
 #line hidden
-#line 930
+#line 931
  testRunner.When("both numbers are divided", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
                 TechTalk.SpecFlow.Table table105 = new TechTalk.SpecFlow.Table(new string[] {
                             "Result"});
                 table105.AddRow(new string[] {
                             "3"});
-#line 931
+#line 932
  testRunner.Then("the answer should be the following", ((string)(null)), table105, "Then ");
 #line hidden
             }
@@ -2863,7 +2863,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "divide-api"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Dividing 1 positive and negative decimal", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 936
+#line 937
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -2887,24 +2887,24 @@ this.ScenarioInitialize(scenarioInfo);
                             "Number1"});
                 table106.AddRow(new string[] {
                             "-1.5"});
-#line 937
+#line 938
  testRunner.Given("I have the first number", ((string)(null)), table106, "Given ");
 #line hidden
                 TechTalk.SpecFlow.Table table107 = new TechTalk.SpecFlow.Table(new string[] {
                             "Number2"});
                 table107.AddRow(new string[] {
                             "0.5"});
-#line 941
+#line 942
  testRunner.And("the second number", ((string)(null)), table107, "And ");
 #line hidden
-#line 945
+#line 946
  testRunner.When("both numbers are divided", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
                 TechTalk.SpecFlow.Table table108 = new TechTalk.SpecFlow.Table(new string[] {
                             "Result"});
                 table108.AddRow(new string[] {
                             "-3"});
-#line 946
+#line 947
  testRunner.Then("the answer should be the following", ((string)(null)), table108, "Then ");
 #line hidden
             }
@@ -2920,7 +2920,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "divide-api"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Dividing 2 large integers", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 951
+#line 952
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -2944,24 +2944,24 @@ this.ScenarioInitialize(scenarioInfo);
                             "Number1"});
                 table109.AddRow(new string[] {
                             "440664384"});
-#line 952
+#line 953
  testRunner.Given("I have the first number", ((string)(null)), table109, "Given ");
 #line hidden
                 TechTalk.SpecFlow.Table table110 = new TechTalk.SpecFlow.Table(new string[] {
                             "Number2"});
                 table110.AddRow(new string[] {
                             "35664"});
-#line 956
+#line 957
  testRunner.And("the second number", ((string)(null)), table110, "And ");
 #line hidden
-#line 960
+#line 961
  testRunner.When("both numbers are divided", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
                 TechTalk.SpecFlow.Table table111 = new TechTalk.SpecFlow.Table(new string[] {
                             "Result"});
                 table111.AddRow(new string[] {
                             "12356"});
-#line 961
+#line 962
  testRunner.Then("the answer should be the following", ((string)(null)), table111, "Then ");
 #line hidden
             }
@@ -2977,7 +2977,7 @@ this.ScenarioInitialize(scenarioInfo);
                     "divide-api"};
             System.Collections.Specialized.OrderedDictionary argumentsOfScenario = new System.Collections.Specialized.OrderedDictionary();
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Dividing 2 large integers ending with zero", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 966
+#line 967
 this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -3001,24 +3001,24 @@ this.ScenarioInitialize(scenarioInfo);
                             "Number1"});
                 table112.AddRow(new string[] {
                             "68249865600"});
-#line 967
+#line 968
  testRunner.Given("I have the first number", ((string)(null)), table112, "Given ");
 #line hidden
                 TechTalk.SpecFlow.Table table113 = new TechTalk.SpecFlow.Table(new string[] {
                             "Number2"});
                 table113.AddRow(new string[] {
                             "864360"});
-#line 971
+#line 972
  testRunner.And("the second number", ((string)(null)), table113, "And ");
 #line hidden
-#line 975
+#line 976
  testRunner.When("both numbers are divided", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
                 TechTalk.SpecFlow.Table table114 = new TechTalk.SpecFlow.Table(new string[] {
                             "Result"});
                 table114.AddRow(new string[] {
                             "78960"});
-#line 976
+#line 977
  testRunner.Then("the answer should be the following", ((string)(null)), table114, "Then ");
 #line hidden
             }

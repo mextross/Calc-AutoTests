@@ -36,7 +36,7 @@ context('Division UI tests', () => {
         calcHomePg.checkResult("-99");
     })
 
-    it('EF: Dividing a dividend lesser than a divisor', () => {
+    it('EF: Divide a dividend lesser than a divisor', () => {
         calcHomePg.inputLeftNumber("6");
         calcHomePg.selectOperator("/");
         calcHomePg.inputRightNumber("5");
@@ -53,7 +53,7 @@ context('Division UI tests', () => {
         calcHomePg.checkResult("0");
     })
 
-    it('EF: Divide integer by zero', () => {
+    it('EF: Divide an integer by zero', () => {
         calcHomePg.inputLeftNumber("123");
         calcHomePg.selectOperator("/");
         calcHomePg.inputRightNumber("0");
@@ -61,7 +61,7 @@ context('Division UI tests', () => {
         calcHomePg.checkResult("undefined");
     })
 
-    
+
     it('EF: Divide 2 fractions', () => {
         calcHomePg.inputLeftNumber("3/4");
         calcHomePg.selectOperator("/");
@@ -78,7 +78,7 @@ context('Division UI tests', () => {
         calcHomePg.checkResult("3");
     })
 
-    it('EF: Divide integers each 3 digits long(max input)', () => {
+    it('Divide integers each 3 digits long(max input)', () => {
         calcHomePg.inputLeftNumber("999");
         calcHomePg.selectOperator("/");
         calcHomePg.inputRightNumber("999");
@@ -93,7 +93,7 @@ context('Division UI tests', () => {
         calcHomePg.clickCalculatorButton();
         calcHomePg.checkResult("2");
     })
-    
+
     it('EF: Divide 2 complex numbers', () => {
         calcHomePg.inputLeftNumber("6i");
         calcHomePg.selectOperator("/");

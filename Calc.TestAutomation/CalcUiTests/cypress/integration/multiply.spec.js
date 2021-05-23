@@ -51,7 +51,6 @@ context('Multiplication UI tests', () => {
         calcHomePg.checkResult("0");
     })
 
-    
     it('EF: Multiply 2 fractions', () => {
         calcHomePg.inputLeftNumber("3/4");
         calcHomePg.selectOperator("*");
@@ -83,8 +82,8 @@ context('Multiplication UI tests', () => {
         calcHomePg.clickCalculatorButton();
         calcHomePg.checkResult("128");
     })
-    
-    it('EF: Subtract 2 complex numbers', () => {
+
+    it('EF: Multiply 2 complex numbers', () => {
         calcHomePg.inputLeftNumber("3i");
         calcHomePg.selectOperator("*");
         calcHomePg.inputRightNumber("7");
@@ -100,7 +99,7 @@ context('Multiplication UI tests', () => {
         calcHomePg.checkResult("8.53973422267");
     })
 
-    it('EF: Subtract 2 algebraic expressions', () => {
+    it('EF: Multiply 2 algebraic expressions', () => {
         calcHomePg.inputLeftNumber("x");
         calcHomePg.selectOperator("*");
         calcHomePg.inputRightNumber("x");

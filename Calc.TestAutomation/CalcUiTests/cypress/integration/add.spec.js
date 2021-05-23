@@ -19,8 +19,7 @@ context('Addition', () => {
         calcHomePg.checkResult("3");
     })
 
-
-    it('EF: Add 2 positive integer by leaving the default "+" operator dropdown', () => {
+    it('EF: Add 2 positive integers by leaving the default "+" operator dropdown', () => {
         calcHomePg.inputLeftNumber("3");
         calcHomePg.inputRightNumber("4");
         calcHomePg.clickCalculatorButton();
@@ -59,7 +58,6 @@ context('Addition', () => {
         calcHomePg.checkResult("-89");
     })
 
-    
     it('EF: Add 2 fractions', () => {
         calcHomePg.inputLeftNumber("1/2");
         calcHomePg.inputRightNumber("3/4");
@@ -91,7 +89,7 @@ context('Addition', () => {
         calcHomePg.clickCalculatorButton();
         calcHomePg.checkResult("24");
     })
-    
+
     it('EF: Add 2 complex numbers', () => {
         calcHomePg.inputLeftNumber("2i");
         calcHomePg.inputRightNumber("3");
@@ -99,6 +97,7 @@ context('Addition', () => {
         calcHomePg.clickCalculatorButton();
         calcHomePg.checkResult("2i + 3");
     })
+
     it('EF: Add 2 irrational numbers', () => {
         calcHomePg.inputLeftNumber("e");
         calcHomePg.inputRightNumber("π");

@@ -11,7 +11,6 @@ context('Subtraction', () => {
     })
 
     it('Subtract 2 positive integers', () => {
-
         calcHomePg.inputLeftNumber("1");
         calcHomePg.selectOperator("-");
         calcHomePg.inputRightNumber("2");
@@ -51,7 +50,6 @@ context('Subtraction', () => {
         calcHomePg.checkResult("89");
     })
 
-    
     it('EF: Subtract 2 fractions', () => {
         calcHomePg.inputLeftNumber("3/4");
         calcHomePg.selectOperator("-");
@@ -83,7 +81,7 @@ context('Subtraction', () => {
         calcHomePg.clickCalculatorButton();
         calcHomePg.checkResult("-8");
     })
-    
+
     it('EF: Subtract 2 complex numbers', () => {
         calcHomePg.inputLeftNumber("3i");
         calcHomePg.selectOperator("-");

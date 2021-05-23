@@ -2,7 +2,7 @@
 Simple calculator for adding **two** numbers
 
 
-	@add-api
+@add-api
 Scenario: Adding 2 positive integers
 	Given I have the first number
 	| Number1 |
@@ -44,7 +44,7 @@ Scenario: Adding 2 positive integers
 
 
 
-	@add-api
+@add-api
 Scenario: Adding 2 negative integers
 	Given I have the first number
 	| Number1 |
@@ -507,7 +507,7 @@ Scenario: Subtracting 2 large integers
 
 
 @multiply-api
-Scenario: Multiplying 2 positive Integers
+Scenario: Multiplying 2 positive integers
 	Given I have the first number
 	| Number1 | 
 	|        0|         
@@ -632,6 +632,7 @@ Scenario: Multiplying 1 positive and 1 negative integer
 	|      -99|  
     |     -999|  
 	|  -998001|  
+
 
 @multiply-api
 Scenario: Multiplying 0 and an integer
@@ -789,7 +790,7 @@ Scenario: Dividing 2 positive integers with no remainder
 	|        1| 
 	|        1| 
 
-	@divide-api
+@divide-api
 Scenario: Dividing 2 negative integers with no remainder
 	Given I have the first number
 	| Number1 | 
@@ -820,7 +821,7 @@ Scenario: Dividing 2 negative integers with no remainder
 	|        1| 
 	|        1| 
 
-	@divide-api
+@divide-api
 Scenario: Dividing 1 positive and negative integer with no remander
 	Given I have the first number
 	| Number1 | 
@@ -851,7 +852,7 @@ Scenario: Dividing 1 positive and negative integer with no remander
 	|       -1| 
 	|       -1| 
 
-	@divide-api
+@divide-api
 Scenario: Dividing a dividend lesser than a divisor
 	Given I have the first number
 	| Number1 | 
@@ -962,7 +963,7 @@ Scenario: Dividing 2 large integers
 	| Result |
 	| 12356  |
 
-	@divide-api
+@divide-api
 Scenario: Dividing 2 large integers ending with zero
 	Given I have the first number
 	| Number1 |

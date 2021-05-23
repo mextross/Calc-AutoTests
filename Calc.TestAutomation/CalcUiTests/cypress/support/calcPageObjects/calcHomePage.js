@@ -8,11 +8,11 @@ var calcHomePage = function () {
     var iframe = '#root > div > div:nth-child(2) > iframe'
 
     this.inputLeftNumber = function (leftNum) {
-        cy.get(leftNumberInput).type(leftNum)
+        cy.get(leftNumberInput).clear().type(leftNum)
     };
 
     this.inputRightNumber = function (rightNum) {
-        cy.get(rightNumberInput).type(rightNum)
+        cy.get(rightNumberInput).clear().type(rightNum)
     };
 
     this.selectOperator = function (op) {
@@ -32,6 +32,5 @@ var calcHomePage = function () {
         cy.get(result).should('have.value', expectedResult)
     };
 
-    
 };
 module.exports = new calcHomePage();
