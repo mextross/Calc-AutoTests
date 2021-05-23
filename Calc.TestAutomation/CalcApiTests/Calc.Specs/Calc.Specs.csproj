@@ -19,7 +19,6 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.9.4" />
-    <PackageReference Include="SafeNuGet" Version="1.0.10" />
     <PackageReference Include="SpecFlow.Plus.LivingDocPlugin" Version="3.8.35" />
 
     
