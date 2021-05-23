@@ -23,9 +23,9 @@ API Endpoint - https://calculator-api.azurewebsites.net/api/Calculate
 
 #UI Framework
 1. Installation process
-Remove NPM proxy:
-npm config rm proxy
-npm config rm https-proxy
+- Remove NPM proxy:
+    - npm config rm proxy
+    - npm config rm https-proxy
 
 Powershell commands:
 $env:CYPRESS_INSTALL_BINARY=''
