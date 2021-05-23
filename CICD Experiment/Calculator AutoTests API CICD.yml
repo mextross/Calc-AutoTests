@@ -9,6 +9,7 @@ parameters:
   default: APPDEV
   values:
     - APPDEV
+    - SIT
 
 trigger:
   branches:
@@ -82,3 +83,20 @@ stages:
       testdlls: '${{ variables.testDLLs }}'
       dotNetVersionForAPITests: $(CALCAPIAutoTestDotNetVersion)
       vsTestPath: $(VSTestPath)
+
+# SIT
+- stage: SIT
+  displayName: Deploy to SIT
+  dependsOn: CI
+  condition: and(succeeded(), eq('${{ parameters.deployEnvironment }}', 'SIT'))
+  variables:  
+   - group: CALC_APPDEV
+  jobs:
+  - template: '${{ variables.deployTemplate }}'
+    parameters:
+      environment: SIT
+      artifactName: '${{ variables.artifactName }}'
+      testdlls: '${{ variables.testDLLs }}'
+      dotNetVersionForAPITests: $(CALCAPIAutoTestDotNetVersion)
+      vsTestPath: $(VSTestPath)
+ 
