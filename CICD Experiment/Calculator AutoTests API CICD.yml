@@ -51,12 +51,11 @@ stages:
             projects: '${{ variables.restoreBuildProjects }}'
             arguments: '--configuration $(BuildConfiguration) --output $(build.artifactstagingdirectory)'
 
-        - task: CopyFiles@2
-          displayName: 'Copy Files to: $(Build.ArtifactStagingDirectory)'
+        - task: DotNetCoreCLI@2
+          displayName: Publish
           inputs:
-            SourceFolder: '$(Build.SourcesDirectory)/Calc.TestAutomation/CaclApiTests'
-            Contents: '**'
-            TargetFolder: '$(Build.ArtifactStagingDirectory)'
+            command: publish
+            arguments: '--configuration $(BuildConfiguration) --output $(build.artifactstagingdirectory)'
 
         - task: PublishBuildArtifacts@1
           displayName: Publish Build Artifact - ${{ variables.artifactName }}
@@ -64,8 +63,8 @@ stages:
             PathtoPublish: '$(Build.ArtifactStagingDirectory)'
             ArtifactName: '${{ variables.artifactName }}'
             publishLocation: 'Container'
-            condition: succeeded()
-
+          condition: succeeded()
+          
 # APPDEV
 - stage: APPDEV
   displayName: Deploy to APPDEV
