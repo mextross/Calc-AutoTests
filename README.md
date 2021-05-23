@@ -48,5 +48,5 @@ UI Endpoint: https://calculator-web.azurewebsites.net/
 - Test: Test - > Test Explorer -> Run All Tests
 
 #UI Framework
-Build: In Visual Studio code terminal, execute 'npx cypress open'
-Test : Run any of the spec.js files under CalcUiTests/integration under Electron browser
+- Build: In Visual Studio code terminal, execute 'npx cypress open'
+- Test : Run any of the spec.js files under CalcUiTests/integration under Electron browser
