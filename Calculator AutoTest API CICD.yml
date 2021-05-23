@@ -55,9 +55,7 @@ stages:
           displayName: 'Copy Files to: $(Build.ArtifactStagingDirectory)'
           inputs:
             SourceFolder: '$(Build.SourcesDirectory)'
-              Contents: |
-               **\**
-               !**\node_modules\**
+              Contents: '**'
               TargetFolder: '$(Build.ArtifactStagingDirectory)'
 
         - task: PublishBuildArtifacts@1
