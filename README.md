@@ -11,7 +11,7 @@ The REST API Test Automation Framework is built using Specflow, NUnit and RestSh
 
 #API Framework
 1. Software dependencies 
-i. (Right click solution CalcApiTests.sln to restore the following  nuget packages)
+ (Right click solution CalcApiTests.sln to restore the following  nuget packages)
  - Microsoft.NET.Test.Sdk(16.9.4) - https://www.nuget.org/packages/Microsoft.NET.Test.SDK
  - Nunit3TestAdapter(3.17.0) - https://www.nuget.org/packages/NUnit3TestAdapter
  - SafeNuget(1.0.10) - https://www.nuget.org/packages/SafeNuGet
