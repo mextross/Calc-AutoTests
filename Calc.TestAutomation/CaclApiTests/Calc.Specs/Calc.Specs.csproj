@@ -18,16 +18,22 @@
   </ItemGroup>
 
   <ItemGroup>
+    <PackageReference Include="ExtentReports" Version="4.1.0" />
+    <PackageReference Include="Microsoft.CodeAnalysis.Analyzers" Version="3.3.2">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
     <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.9.4" />
-    <PackageReference Include="SpecFlow.Plus.LivingDocPlugin" Version="3.7.43" />
+    <PackageReference Include="NUnit.ConsoleRunner" Version="3.12.0" />
+    <PackageReference Include="SpecFlow.Plus.LivingDocPlugin" Version="3.8.35" />
 
     
 
     
 
     
-    <PackageReference Include="SpecFlow.NUnit" Version="3.7.38" />
-    <PackageReference Include="nunit" Version="3.13.0" />
+    <PackageReference Include="SpecFlow.NUnit" Version="3.8.14" />
+    <PackageReference Include="nunit" Version="3.13.2" />
     <PackageReference Include="NUnit3TestAdapter" Version="3.17.0" />
     
 
