@@ -6,7 +6,8 @@ The Web UI Test Automation Framework is built using Cypress
 The REST API Test Automation Framework is built using Specflow, NUnit and RestSharp 
 
 # Getting Started
-1.	Installation process
+1.	Installation process 
+Clone ADO repo
 
 2.	Software dependencies
 3.	Latest releases
