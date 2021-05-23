@@ -12,12 +12,17 @@ The REST API Test Automation Framework is built using Specflow, NUnit and RestSh
 #API Framework
 1. Software dependencies - Right click solution CalcApiTests.sln to restore the following  nuget packages
  - Microsoft.NET.Test.Sdk(16.9.4) - https://www.nuget.org/packages/Microsoft.NET.Test.SDK
+ - nunit(3.12.0) - 
  - Nunit3TestAdapter(3.17.0) - https://www.nuget.org/packages/NUnit3TestAdapter
  - SafeNuget(1.0.10) - https://www.nuget.org/packages/SafeNuGet
  - Specflow.NUnit(3.81.4) - https://www.nuget.org/packages/SpecFlow.NUnit
  - Specflow.Plus.LivingDocPlugin(3.8.35) - https://www.nuget.org/packages/SpecFlow.Plus.LivingDoc.CLI
  - System.Net.Security(4.3.2) - https://www.nuget.org/packages/System.Net.Security
  - System.Security.Claims(4.3.0) - https://www.nuget.org/packages/System.Security.Claims
+ - Microsoft.Extensions.Configuration(5.0.0) - https://www.nuget.org/packages/Microsoft.Extensions.Configuration
+ - Microsoft.Extensions.Configuration.FileExtensions(5.0.0) - https://www.nuget.org/packages/Microsoft.Extensions.Configuration.FileExtensions
+ - Microsoft.Extensions.Configuration.Json(5.0.0) - https://www.nuget.org/packages/Microsoft.Extensions.Configuration.Json
+-  RestSharp(106.11.7) - https://www.nuget.org/packages/RestSharp
 
 2.	API references - 
 API Endpoint - https://calculator-api.azurewebsites.net/api/Calculate
