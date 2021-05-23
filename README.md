@@ -18,7 +18,7 @@ The REST API Test Automation Framework is built using Specflow, NUnit and RestSh
  - Specflow.Plus.LivingDocPlugin(3.8.35) - https://www.nuget.org/packages/SpecFlow.Plus.LivingDoc.CLI
  - System.Net.Security(4.3.2) - https://www.nuget.org/packages/System.Net.Security
 
-2.	API references
+2.	API references - 
 API Endpoint - https://calculator-api.azurewebsites.net/api/Calculate
 
 #UI Framework
