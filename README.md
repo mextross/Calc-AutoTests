@@ -27,13 +27,13 @@ API Endpoint - https://calculator-api.azurewebsites.net/api/Calculate
     - npm config rm proxy
     - npm config rm https-proxy
 
-Powershell commands:
-$env:CYPRESS_INSTALL_BINARY=''
-$env:CYPRESS_INSTALL_VERSION=''
-$env:NODE_TLS_REJECT_UNAUTHORIZED=0
-$env:HTTP_PROXY="http://username:password@kbproxy.corp.bank.nzpfs.co.nz:8080/"
-$env:HTTPS_PROXY="http://username:password@kbproxy.corp.bank.nzpfs.co.nz:8080/"
-npm install cypress --save-dev
+- Powershell commands:
+    - env:CYPRESS_INSTALL_BINARY=''
+    - $env:CYPRESS_INSTALL_VERSION=''
+    - $env:NODE_TLS_REJECT_UNAUTHORIZED=0
+    - $env:HTTP_PROXY="http://username:password@kbproxy.corp.bank.nzpfs.co.nz:8080/"
+    - $env:HTTPS_PROXY="http://username:password@kbproxy.corp.bank.nzpfs.co.nz:8080/"
+    - npm install cypress --save-dev
 
 2. Software dependencies
 - Cypress npm module - https://www.npmjs.com/package/cypress
