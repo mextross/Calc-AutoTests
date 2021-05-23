@@ -1,0 +1,37 @@
+parameters:
+  environment: '--'
+  artifactName: '--'
+  testdlls: '--'
+  dotNetVersionForAPITests: '--'
+  vsTestPath: '--'
+  tags: 'calc-apiautotest'
+
+jobs:
+- deployment:
+  environment:
+    name: ${{ parameters.environment }}
+    resourceType: VirtualMachine
+    tags: ${{ parameters.tags }}
+
+  variables:
+    packagePath: ${{ parameters.artifactName }}
+  workspace:
+    clean: all
+  strategy:
+    runOnce:
+      deploy:
+        steps:
+        - task: FileTransform@1
+          inputs:
+            folderPath: '$(Pipeline.Workspace)\${{ variables.packagePath }}' 
+            fileType: json
+            targetFiles: 'appsettings.json'
+
+        - task: VSTest@2
+          inputs:
+            testSelector: 'testAssemblies'
+            testAssemblyVer2: ${{parameters.testdlls}}
+            searchFolder: '$(Pipeline.Workspace)\${{ variables.packagePath }}'
+            otherConsoleOptions: '${{parameters.dotNetVersionForAPITests}}'
+            vstestLocationMethod: 'location'
+            vstestLocation: ${{ parameters.vsTestPath }}
