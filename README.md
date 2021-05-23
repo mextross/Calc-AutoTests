@@ -1,6 +1,6 @@
 # Introduction 
 Calculator Tests contains two automated test frameworks to test the following calculator web application. 
-- https://calculator-web.azurewebsites.net/
+# https://calculator-web.azurewebsites.net/
 
 - The Web UI Test Automation Framework is built using Cypress
 - The REST API Test Automation Framework is built using Specflow, NUnit and RestSharp 
