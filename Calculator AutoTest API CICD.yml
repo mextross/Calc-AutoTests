@@ -20,7 +20,7 @@ trigger:
      
 variables:
   artifactName: 'Calc-APIAutoTest'
-  deployTemplate: '../Templates/Calc_APIAutoTest_Deploy_Jobs.yml'
+  deployTemplate: './Templates/Calc_APIAutoTest_Deploy_Jobs.yml'
   restoreBuildProjects: |
       **/CaclApiTests.csproj
       **/Calc.Specs.csproj
