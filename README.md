@@ -1,4 +1,5 @@
-# Introduction 
+# Calculator Tests
+
 Calculator Tests contains two automated test frameworks to test the following calculator web application. 
 # https://calculator-web.azurewebsites.net/
 
