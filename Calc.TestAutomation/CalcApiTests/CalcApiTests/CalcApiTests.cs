@@ -36,6 +36,8 @@ namespace CalcApiTests
             request.RequestFormat = DataFormat.Json;
             request.AddJsonBody(new { LeftNumber = leftNumber, RightNumber = rightNumber, Operator = this.Operator });
             IRestResponse response = client.Execute(request);
+            Console.WriteLine("statuscode:" + response.StatusCode);
+            Console.WriteLine("response: " + response.Content);
             var jObj = JObject.Parse(response.Content);
             string answer = jObj.GetValue("value").ToString();
             Console.WriteLine("Answer = " + answer);
