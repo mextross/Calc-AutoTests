@@ -9,6 +9,7 @@ parameters:
   default: APPDEV
   values:
     - APPDEV
+    - SIT
 
 trigger:
   branches:
@@ -51,12 +52,13 @@ stages:
             projects: '${{ variables.restoreBuildProjects }}'
             arguments: '--configuration $(BuildConfiguration) --output $(build.artifactstagingdirectory)'
 
-        - task: CopyFiles@2
-          displayName: 'Copy Files to: $(Build.ArtifactStagingDirectory)'
+        - task: DotNetCoreCLI@2
+          displayName: Publish
           inputs:
-            SourceFolder: '$(Build.SourcesDirectory)/Calc.TestAutomation/CaclApiTests'
-            Contents: '**'
-            TargetFolder: '$(Build.ArtifactStagingDirectory)'
+            command: publish
+            projects: '${{ variables.restoreBuildProjects }}'
+            publishWebProjects: False
+            arguments: '--configuration $(BuildConfiguration) --output $(build.artifactstagingdirectory)'
 
         - task: PublishBuildArtifacts@1
           displayName: Publish Build Artifact - ${{ variables.artifactName }}
@@ -64,8 +66,8 @@ stages:
             PathtoPublish: '$(Build.ArtifactStagingDirectory)'
             ArtifactName: '${{ variables.artifactName }}'
             publishLocation: 'Container'
-            condition: succeeded()
-
+          condition: succeeded()
+          
 # APPDEV
 - stage: APPDEV
   displayName: Deploy to APPDEV
@@ -81,3 +83,20 @@ stages:
       testdlls: '${{ variables.testDLLs }}'
       dotNetVersionForAPITests: $(CALCAPIAutoTestDotNetVersion)
       vsTestPath: $(VSTestPath)
+
+# SIT
+- stage: SIT
+  displayName: Deploy to SIT
+  dependsOn: CI
+  condition: and(succeeded(), eq('${{ parameters.deployEnvironment }}', 'SIT'))
+  variables:  
+   - group: CALC_APPDEV
+  jobs:
+  - template: '${{ variables.deployTemplate }}'
+    parameters:
+      environment: SIT
+      artifactName: '${{ variables.artifactName }}'
+      testdlls: '${{ variables.testDLLs }}'
+      dotNetVersionForAPITests: $(CALCAPIAutoTestDotNetVersion)
+      vsTestPath: $(VSTestPath)
+ 
