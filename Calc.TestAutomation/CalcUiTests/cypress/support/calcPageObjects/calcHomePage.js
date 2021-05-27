@@ -32,5 +32,13 @@ var calcHomePage = function () {
         cy.get(result).should('have.value', expectedResult)
     };
 
+    this.Calculate = function (leftNumber, Operator, rightNumber, expectedResult) {
+        this.inputLeftNumber(leftNumber);
+        this.selectOperator(Operator);
+        this.inputRightNumber(rightNumber);
+        this.clickCalculatorButton();
+        this.checkResult(expectedResult);
+    }
+
 };
 module.exports = new calcHomePage();
