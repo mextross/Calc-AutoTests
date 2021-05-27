@@ -1,3 +1,11 @@
 {
-   "baseUrl": "https://calculator-web.azurewebsites.net"
+  "baseUrl": "https://calculator-web.azurewebsites.net",
+  "defaultCommandTimeout": 10000,
+  "reporter": "mochawesome",
+  "reporterOptions": {
+    "reportDir": "cypress/results",
+    "overwrite": true,
+    "html": false,
+    "json": true
+  }
 }

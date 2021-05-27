@@ -1,7 +1,6 @@
 /**Addition UI tests
  * Prefix EF: Expected failure of a test due to a defect
 */
-Cypress.config('defaultCommandTimeout', 8000);
 
 var calcHomePg = require("../support/calcPageObjects/calcHomepage")
 
@@ -10,12 +9,11 @@ context('Addition', () => {
         cy.visit('/')
     })
 
-    it('Add 2 positive integers but clicking and choosing the "+" operator dropdown', () => {
-        calcHomePg.Calculate("1", "+", "2", "3");
-    })
-
     it('EF: Add 2 positive integers by leaving the default "+" operator dropdown', () => {
         calcHomePg.Calculate("3", "+", "4", "7");
+    })
+    it('Add 2 positive integers but clicking and choosing the "+" operator dropdown', () => {
+        calcHomePg.Calculate("1", "+", "2", "3");
     })
 
     it('EF: Add 2 negative integers', () => {
@@ -61,4 +59,5 @@ context('Addition', () => {
     it('EF: Add 2 algebraic expressions', () => {
         calcHomePg.Calculate("2x", "+", "x", "3x");
     })
+
 })

@@ -18,3 +18,8 @@ import './commands'
 
 // Alternatively you can use CommonJS syntax:
 // require('./commands')
+// cypress/plugins/index.js
+module.exports = (on, config) => {
+    config.defaultCommandTimeout = 10000
+    return config
+  }

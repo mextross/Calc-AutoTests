@@ -1,0 +1,347 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 12,
+    "passes": 4,
+    "pending": 0,
+    "failures": 8,
+    "start": "2021-05-27T23:00:13.452Z",
+    "end": "2021-05-27T23:01:52.700Z",
+    "duration": 99248,
+    "testsRegistered": 12,
+    "passPercent": 33.33333333333333,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "5b7d4ea0-294d-442a-a789-723d0aa89bbb",
+      "title": "",
+      "fullFile": "cypress/integration/multiply.spec.js",
+      "file": "cypress/integration/multiply.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "6d827d44-14bb-4ed8-967f-26c2794a95ee",
+          "title": "Multiplication UI tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Multiply 2 positive integers",
+              "fullTitle": "Multiplication UI tests Multiply 2 positive integers",
+              "timedOut": null,
+              "duration": 2181,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "calcHomePg.Calculate(\"1\", \"*\", \"2\", \"2\");",
+              "err": {},
+              "uuid": "117267a8-1a51-4506-ac39-a680df83535e",
+              "parentUUID": "6d827d44-14bb-4ed8-967f-26c2794a95ee",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Multiply 2 negative integers",
+              "fullTitle": "Multiplication UI tests Multiply 2 negative integers",
+              "timedOut": null,
+              "duration": 1420,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "calcHomePg.Calculate(\"-34\", \"*\", \"-58\", \"1972\");",
+              "err": {},
+              "uuid": "82d3ca47-e1c8-4d6f-b293-c14797c84848",
+              "parentUUID": "6d827d44-14bb-4ed8-967f-26c2794a95ee",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "EF: Multiply 1 positive and 1 negative integer",
+              "fullTitle": "Multiplication UI tests EF: Multiply 1 positive and 1 negative integer",
+              "timedOut": null,
+              "duration": 11292,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "calcHomePg.Calculate(\"99\", \"*\", \"-1\", \"-99\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: expected '<input.result>' to have value '-99', but the value was '99'",
+                "estack": "AssertionError: Timed out retrying after 10000ms: expected '<input.result>' to have value '-99', but the value was '99'\n    at calcHomePage.checkResult (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\multiply.spec.js:186:20)\n    at calcHomePage.Calculate (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\multiply.spec.js:194:10)\n    at Context.eval (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\multiply.spec.js:115:16)",
+                "diff": "- '99'\n+ '-99'\n"
+              },
+              "uuid": "50574a55-77e5-44e1-9dba-a99f682d7aee",
+              "parentUUID": "6d827d44-14bb-4ed8-967f-26c2794a95ee",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Multiply 1 positive integer and 0",
+              "fullTitle": "Multiplication UI tests Multiply 1 positive integer and 0",
+              "timedOut": null,
+              "duration": 2909,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "calcHomePg.Calculate(\"0\", \"*\", \"123\", \"0\");",
+              "err": {},
+              "uuid": "a27f717c-9e52-454c-a47c-3062cd1dd7a6",
+              "parentUUID": "6d827d44-14bb-4ed8-967f-26c2794a95ee",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Multiply 1 negative integer and 0",
+              "fullTitle": "Multiplication UI tests Multiply 1 negative integer and 0",
+              "timedOut": null,
+              "duration": 1202,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "calcHomePg.Calculate(\"0\", \"*\", \"-89\", \"0\");",
+              "err": {},
+              "uuid": "73257f0b-b9aa-4bcd-b964-3fbbb8a3e27e",
+              "parentUUID": "6d827d44-14bb-4ed8-967f-26c2794a95ee",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "EF: Multiply 2 fractions",
+              "fullTitle": "Multiplication UI tests EF: Multiply 2 fractions",
+              "timedOut": null,
+              "duration": 11221,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "calcHomePg.Calculate(\"3/4\", \"*\", \"1/2\", \"3/8\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: expected '<input.result>' to have value '3/8', but the value was ''",
+                "estack": "AssertionError: Timed out retrying after 10000ms: expected '<input.result>' to have value '3/8', but the value was ''\n    at calcHomePage.checkResult (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\multiply.spec.js:186:20)\n    at calcHomePage.Calculate (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\multiply.spec.js:194:10)\n    at Context.eval (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\multiply.spec.js:124:16)",
+                "diff": "+ '3/8'\n"
+              },
+              "uuid": "7b182ddd-943f-4008-b47c-bc38babfc82d",
+              "parentUUID": "6d827d44-14bb-4ed8-967f-26c2794a95ee",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "EF: Multiply 2 decimals",
+              "fullTitle": "Multiplication UI tests EF: Multiply 2 decimals",
+              "timedOut": null,
+              "duration": 11373,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "calcHomePg.Calculate(\"1.52\", \"*\", \"3.67\", \"5.5784\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: expected '<input.result>' to have value '5.5784', but the value was ''",
+                "estack": "AssertionError: Timed out retrying after 10000ms: expected '<input.result>' to have value '5.5784', but the value was ''\n    at calcHomePage.checkResult (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\multiply.spec.js:186:20)\n    at calcHomePage.Calculate (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\multiply.spec.js:194:10)\n    at Context.eval (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\multiply.spec.js:127:16)",
+                "diff": "+ '5.5784'\n"
+              },
+              "uuid": "549dd592-9d87-4131-aeef-945a02e0e9c6",
+              "parentUUID": "6d827d44-14bb-4ed8-967f-26c2794a95ee",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "EF: Multiply integers each 3 digits long(max input)",
+              "fullTitle": "Multiplication UI tests EF: Multiply integers each 3 digits long(max input)",
+              "timedOut": null,
+              "duration": 11683,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "calcHomePg.Calculate(\"999\", \"*\", \"999\", \"998001\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: expected '<input.result>' to have value '998001', but the value was '99800'",
+                "estack": "AssertionError: Timed out retrying after 10000ms: expected '<input.result>' to have value '998001', but the value was '99800'\n    at calcHomePage.checkResult (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\multiply.spec.js:186:20)\n    at calcHomePage.Calculate (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\multiply.spec.js:194:10)\n    at Context.eval (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\multiply.spec.js:130:16)",
+                "diff": "- '99800'\n+ '998001'\n"
+              },
+              "uuid": "67c067bd-8c16-4d7d-a978-f9a8a2cc3525",
+              "parentUUID": "6d827d44-14bb-4ed8-967f-26c2794a95ee",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "EF: Multiply 2 exponents",
+              "fullTitle": "Multiplication UI tests EF: Multiply 2 exponents",
+              "timedOut": null,
+              "duration": 11307,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "calcHomePg.Calculate(\"2^3\", \"*\", \"2^4\", \"128\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: expected '<input.result>' to have value '128', but the value was ''",
+                "estack": "AssertionError: Timed out retrying after 10000ms: expected '<input.result>' to have value '128', but the value was ''\n    at calcHomePage.checkResult (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\multiply.spec.js:186:20)\n    at calcHomePage.Calculate (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\multiply.spec.js:194:10)\n    at Context.eval (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\multiply.spec.js:133:16)",
+                "diff": "+ '128'\n"
+              },
+              "uuid": "26be81fa-3c47-4f98-8ab5-52e49d43bca7",
+              "parentUUID": "6d827d44-14bb-4ed8-967f-26c2794a95ee",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "EF: Multiply 2 complex numbers",
+              "fullTitle": "Multiplication UI tests EF: Multiply 2 complex numbers",
+              "timedOut": null,
+              "duration": 11558,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "calcHomePg.Calculate(\"3i\", \"*\", \"7\", \"21i\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: expected '<input.result>' to have value '21i', but the value was ''",
+                "estack": "AssertionError: Timed out retrying after 10000ms: expected '<input.result>' to have value '21i', but the value was ''\n    at calcHomePage.checkResult (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\multiply.spec.js:186:20)\n    at calcHomePage.Calculate (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\multiply.spec.js:194:10)\n    at Context.eval (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\multiply.spec.js:136:16)",
+                "diff": "+ '21i'\n"
+              },
+              "uuid": "7e8f9f27-7931-4878-b3b2-e5eb9bdb0835",
+              "parentUUID": "6d827d44-14bb-4ed8-967f-26c2794a95ee",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "EF: Multiply 2 irrational numbers",
+              "fullTitle": "Multiplication UI tests EF: Multiply 2 irrational numbers",
+              "timedOut": null,
+              "duration": 11247,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "calcHomePg.Calculate(\"e\", \"*\", \"π\", \"8.53973422267\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: expected '<input.result>' to have value '8.53973422267', but the value was ''",
+                "estack": "AssertionError: Timed out retrying after 10000ms: expected '<input.result>' to have value '8.53973422267', but the value was ''\n    at calcHomePage.checkResult (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\multiply.spec.js:186:20)\n    at calcHomePage.Calculate (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\multiply.spec.js:194:10)\n    at Context.eval (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\multiply.spec.js:139:16)",
+                "diff": "+ '8.53973422267'\n"
+              },
+              "uuid": "05a43616-8103-4082-a1be-c918f5039179",
+              "parentUUID": "6d827d44-14bb-4ed8-967f-26c2794a95ee",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "EF: Multiply 2 algebraic expressions",
+              "fullTitle": "Multiplication UI tests EF: Multiply 2 algebraic expressions",
+              "timedOut": null,
+              "duration": 11569,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "calcHomePg.Calculate(\"x\", \"*\", \"x\", \"x^2\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: expected '<input.result>' to have value 'x^2', but the value was ''",
+                "estack": "AssertionError: Timed out retrying after 10000ms: expected '<input.result>' to have value 'x^2', but the value was ''\n    at calcHomePage.checkResult (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\multiply.spec.js:186:20)\n    at calcHomePage.Calculate (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\multiply.spec.js:194:10)\n    at Context.eval (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\multiply.spec.js:142:16)",
+                "diff": "+ 'x^2'\n"
+              },
+              "uuid": "c13523ef-1c9f-4ae1-b63c-47d12a985dd4",
+              "parentUUID": "6d827d44-14bb-4ed8-967f-26c2794a95ee",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "117267a8-1a51-4506-ac39-a680df83535e",
+            "82d3ca47-e1c8-4d6f-b293-c14797c84848",
+            "a27f717c-9e52-454c-a47c-3062cd1dd7a6",
+            "73257f0b-b9aa-4bcd-b964-3fbbb8a3e27e"
+          ],
+          "failures": [
+            "50574a55-77e5-44e1-9dba-a99f682d7aee",
+            "7b182ddd-943f-4008-b47c-bc38babfc82d",
+            "549dd592-9d87-4131-aeef-945a02e0e9c6",
+            "67c067bd-8c16-4d7d-a978-f9a8a2cc3525",
+            "26be81fa-3c47-4f98-8ab5-52e49d43bca7",
+            "7e8f9f27-7931-4878-b3b2-e5eb9bdb0835",
+            "05a43616-8103-4082-a1be-c918f5039179",
+            "c13523ef-1c9f-4ae1-b63c-47d12a985dd4"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 98962,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "calcuitests",
+  "version": "1.0.0",
+  "description": "calcuitests",
+  "main": "index.js",
+  "dependencies": {
+    "mochawesome": "^6.2.2",
+    "mochawesome-report-generator": "^5.2.0",
+    "mochawesome-merge": "^4.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:open": "npx cypress open",
+    "cypress:generateResults": "npx cypress run --reporter mochawesome",
+    "cypress:mergeResults": "npx mochawesome-merge '/cypress/results/*.json/' > mochawesome.json",
+    "cypress:generatelHTMLreport": "npx marge mochawesome.json"
+  },
+  
+  "author": "",
+  "license": "ISC"
+
+  
+}
