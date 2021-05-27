@@ -45,6 +45,60 @@ namespace CalcApiTests
             decimal actualAnswer = Convert.ToDecimal(answer);
             return actualAnswer;
         }
+
+        [Test]
+        public void AuthorizationByFalseKey()
+        {
+            var request = new RestRequest(Method.POST);
+            request.AddHeader("x-functions-key", ";ajg;ajga;jg");
+            request.RequestFormat = DataFormat.Json;
+            request.AddJsonBody(new { LeftNumber = "1", RightNumber = "2", Operator = "+" });
+            IRestResponse response = client.Execute(request);
+            Assert.AreEqual("Unauthorized", response.StatusCode.ToString());
+        }
+
+        [Test]
+        public void AuthorizationNullAuthKey()
+        {
+            var request = new RestRequest(Method.POST);
+            request.AddHeader("x-functions-key", null);
+            request.RequestFormat = DataFormat.Json;
+            request.AddJsonBody(new { LeftNumber = "1", RightNumber = "2", Operator = "+" });
+            IRestResponse response = client.Execute(request);
+            Assert.AreEqual("Unauthorized", response.StatusCode.ToString());
+        }
+
+        [Test]
+        public void AuthorizationNoAuthKeyHeader()
+        {
+            var request = new RestRequest(Method.POST);
+            request.RequestFormat = DataFormat.Json;
+            request.AddJsonBody(new { LeftNumber = "1", RightNumber = "2", Operator = "+" });
+            IRestResponse response = client.Execute(request);
+            Assert.AreEqual("Unauthorized", response.StatusCode.ToString());
+        }
+
+        [Test]
+        public void AssertContentType()
+        {
+            var request = new RestRequest(Method.POST);
+            request.AddHeader("x-functions-key", authKey);
+            request.RequestFormat = DataFormat.Json;
+            request.AddJsonBody(new { LeftNumber = "1", RightNumber = "2", Operator = "+" });
+            IRestResponse response = client.Execute(request);
+            Assert.AreEqual("application/json; charset=utf-8", response.ContentType.ToString());
+        }
+
+        [Test]
+        public void EmptyOperator404Error()
+        {
+            var request = new RestRequest(Method.POST);
+            request.AddHeader("x-functions-key", authKey);
+            request.RequestFormat = DataFormat.Json;
+            request.AddJsonBody(new { LeftNumber = "1", RightNumber = "2", Operator = "" });
+            IRestResponse response = client.Execute(request);
+            Assert.AreEqual("NotFound", response.StatusCode.ToString());
+        }
     }
 }
 
