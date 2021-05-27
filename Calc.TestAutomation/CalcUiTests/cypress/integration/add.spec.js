@@ -9,9 +9,6 @@ context('Addition', () => {
         cy.visit('/')
     })
 
-    it('EF: Add 2 positive integers by leaving the default "+" operator dropdown', () => {
-        calcHomePg.Calculate("3", "+", "4", "7");
-    })
     it('Add 2 positive integers but clicking and choosing the "+" operator dropdown', () => {
         calcHomePg.Calculate("1", "+", "2", "3");
     })
@@ -59,5 +56,10 @@ context('Addition', () => {
     it('EF: Add 2 algebraic expressions', () => {
         calcHomePg.Calculate("2x", "+", "x", "3x");
     })
-
+    it('EF: Add 2 positive integers by leaving the default "+" operator dropdown', () => {
+        calcHomePg.inputLeftNumber("1");
+        calcHomePg.inputRightNumber("2");
+        calcHomePg.clickCalculatorButton();
+        calcHomePg.checkResult("3");
+    })
 })
