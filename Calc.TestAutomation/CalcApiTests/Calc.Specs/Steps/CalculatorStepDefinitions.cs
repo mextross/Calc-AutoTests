@@ -61,7 +61,6 @@ namespace Calc.Specs.Steps
             var expectedResults = table.Rows.Select(x => Convert.ToDecimal(x["Result"])).ToList();
             Assert.AreEqual(expectedResults, actualResults);
         }
-
     }
 }
 

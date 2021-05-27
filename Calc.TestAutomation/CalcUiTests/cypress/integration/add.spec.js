@@ -1,7 +1,7 @@
 /**Addition UI tests
  * Prefix EF: Expected failure of a test due to a defect
 */
-Cypress.config('defaultCommandTimeout', 3000);
+Cypress.config('defaultCommandTimeout', 5000);
 
 var calcHomePg = require("../support/calcPageObjects/calcHomepage")
 

@@ -44,7 +44,6 @@ context('Division UI tests', () => {
         calcHomePg.checkResult("1.2");
     })
 
-
     it('Divide 0 by an integer', () => {
         calcHomePg.inputLeftNumber("0");
         calcHomePg.selectOperator("/");
