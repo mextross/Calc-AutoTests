@@ -92,7 +92,7 @@
     | 8643684    | -789648353  | 798292037  |
     | 165466894  | 330635640   | -165168746 |
 
-  @subtractingdecimals
+  @subtractingDecimals
   Scenario Outline: Subtracting 2 positive decimals
   Given I have a first number <leftNumber> 
   And I have a second number <rightNumber> 
@@ -103,7 +103,7 @@
     | leftNumber | rightNumber | result |
     | 4.6        | 8.2         | -3.6   |
 
-  @subtractingdecimals
+  @subtractingDecimals
   Scenario Outline: Subtracting 2 negative decimals
   Given I have a first number <leftNumber> 
   And I have a second number <rightNumber> 
@@ -114,7 +114,7 @@
     | leftNumber | rightNumber | result |
     | -1.2       | -8.5        | 7.3    |
 
-  @subtractingdecimals
+  @subtractingDecimals
   Scenario Outline: Subtracting 1 positive and 1 negative decimal
   Given I have a first number <leftNumber> 
   And I have a second number <rightNumber> 

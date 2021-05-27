@@ -25,7 +25,7 @@ namespace CalcApiTests
             calcEndpoint = configuration.GetSection("calcAPIEndpoint").Value;
             authKey = configuration.GetSection("x-functions-key").Value;
             client = new RestClient(calcEndpoint);
-      
+
         }
 
         /*Triggers the api request and retrieves the response*/

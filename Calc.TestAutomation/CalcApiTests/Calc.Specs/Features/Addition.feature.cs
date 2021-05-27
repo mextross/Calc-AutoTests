@@ -85,6 +85,7 @@ namespace Calc.Specs.Features
         [NUnit.Framework.TestCaseAttribute("99", "1", "100", null)]
         [NUnit.Framework.TestCaseAttribute("1", "999", "1000", null)]
         [NUnit.Framework.TestCaseAttribute("999", "999", "1998", null)]
+        [NUnit.Framework.TestCaseAttribute("9999", "9999", "19998", null)]
         public virtual void Adding2PositiveIntegers(string leftNumber, string rightNumber, string result, string[] exampleTags)
         {
             string[] @__tags = new string[] {
@@ -161,7 +162,7 @@ namespace Calc.Specs.Features
             argumentsOfScenario.Add("rightNumber", rightNumber);
             argumentsOfScenario.Add("result", result);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Adding 2 negative integers", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 24
+#line 26
   this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -181,16 +182,16 @@ namespace Calc.Specs.Features
             else
             {
                 this.ScenarioStart();
-#line 25
+#line 27
   testRunner.Given(string.Format("I have a first number {0}", leftNumber), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 26
+#line 28
   testRunner.And(string.Format("I have a second number {0}", rightNumber), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 27
+#line 29
   testRunner.When("both numbers are added", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 28
+#line 30
   testRunner.Then(string.Format("I should have the following {0}", result), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -223,7 +224,7 @@ namespace Calc.Specs.Features
             argumentsOfScenario.Add("rightNumber", rightNumber);
             argumentsOfScenario.Add("result", result);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Adding 1 positive and 1 negative integer", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 44
+#line 46
   this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -243,16 +244,16 @@ namespace Calc.Specs.Features
             else
             {
                 this.ScenarioStart();
-#line 45
+#line 47
   testRunner.Given(string.Format("I have a first number {0}", leftNumber), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 46
+#line 48
   testRunner.And(string.Format("I have a second number {0}", rightNumber), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 47
+#line 49
   testRunner.When("both numbers are added", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 48
+#line 50
   testRunner.Then(string.Format("I should have the following {0}", result), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -287,7 +288,7 @@ namespace Calc.Specs.Features
             argumentsOfScenario.Add("rightNumber", rightNumber);
             argumentsOfScenario.Add("result", result);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Adding 0 and an integer", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 63
+#line 65
   this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -307,16 +308,16 @@ namespace Calc.Specs.Features
             else
             {
                 this.ScenarioStart();
-#line 64
+#line 66
   testRunner.Given(string.Format("I have a first number {0}", leftNumber), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 65
+#line 67
   testRunner.And(string.Format("I have a second number {0}", rightNumber), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 66
+#line 68
   testRunner.When("both numbers are added", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 67
+#line 69
   testRunner.Then(string.Format("I should have the following {0}", result), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -343,7 +344,7 @@ namespace Calc.Specs.Features
             argumentsOfScenario.Add("rightNumber", rightNumber);
             argumentsOfScenario.Add("result", result);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Adding 2 large numbers", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 84
+#line 86
   this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -363,16 +364,16 @@ namespace Calc.Specs.Features
             else
             {
                 this.ScenarioStart();
-#line 85
+#line 87
   testRunner.Given(string.Format("I have a first number {0}", leftNumber), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 86
+#line 88
   testRunner.And(string.Format("I have a second number {0}", rightNumber), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 87
+#line 89
   testRunner.When("both numbers are added", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 88
+#line 90
   testRunner.Then(string.Format("I should have the following {0}", result), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -397,7 +398,7 @@ namespace Calc.Specs.Features
             argumentsOfScenario.Add("rightNumber", rightNumber);
             argumentsOfScenario.Add("result", result);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Adding 2 positive decimals", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 99
+#line 101
   this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -417,16 +418,16 @@ namespace Calc.Specs.Features
             else
             {
                 this.ScenarioStart();
-#line 100
+#line 102
   testRunner.Given(string.Format("I have a first number {0}", leftNumber), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 101
+#line 103
   testRunner.And(string.Format("I have a second number {0}", rightNumber), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 102
+#line 104
   testRunner.When("both numbers are added", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 103
+#line 105
   testRunner.Then(string.Format("I should have the following {0}", result), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -451,7 +452,7 @@ namespace Calc.Specs.Features
             argumentsOfScenario.Add("rightNumber", rightNumber);
             argumentsOfScenario.Add("result", result);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Adding 2 negative decimals", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 111
+#line 113
   this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -471,16 +472,16 @@ namespace Calc.Specs.Features
             else
             {
                 this.ScenarioStart();
-#line 112
+#line 114
   testRunner.Given(string.Format("I have a first number {0}", leftNumber), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 113
+#line 115
   testRunner.And(string.Format("I have a second number {0}", rightNumber), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 114
+#line 116
   testRunner.When("both numbers are added", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 115
+#line 117
   testRunner.Then(string.Format("I should have the following {0}", result), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -505,7 +506,7 @@ namespace Calc.Specs.Features
             argumentsOfScenario.Add("rightNumber", rightNumber);
             argumentsOfScenario.Add("result", result);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Adding 1 positive and 1 negative decimal", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 122
+#line 124
   this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -525,16 +526,16 @@ namespace Calc.Specs.Features
             else
             {
                 this.ScenarioStart();
-#line 123
+#line 125
   testRunner.Given(string.Format("I have a first number {0}", leftNumber), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 124
+#line 126
   testRunner.And(string.Format("I have a second number {0}", rightNumber), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 125
+#line 127
   testRunner.When("both numbers are added", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 126
+#line 128
   testRunner.Then(string.Format("I should have the following {0}", result), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }
@@ -559,7 +560,7 @@ namespace Calc.Specs.Features
             argumentsOfScenario.Add("rightNumber", rightNumber);
             argumentsOfScenario.Add("result", result);
             TechTalk.SpecFlow.ScenarioInfo scenarioInfo = new TechTalk.SpecFlow.ScenarioInfo("Adding 2 small decimals", null, tagsOfScenario, argumentsOfScenario, this._featureTags);
-#line 134
+#line 136
   this.ScenarioInitialize(scenarioInfo);
 #line hidden
             bool isScenarioIgnored = default(bool);
@@ -579,16 +580,16 @@ namespace Calc.Specs.Features
             else
             {
                 this.ScenarioStart();
-#line 135
+#line 137
   testRunner.Given(string.Format("I have a first number {0}", leftNumber), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Given ");
 #line hidden
-#line 136
+#line 138
   testRunner.And(string.Format("I have a second number {0}", rightNumber), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line hidden
-#line 137
+#line 139
   testRunner.When("both numbers are added", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "When ");
 #line hidden
-#line 138
+#line 140
   testRunner.Then(string.Format("I should have the following {0}", result), ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             }

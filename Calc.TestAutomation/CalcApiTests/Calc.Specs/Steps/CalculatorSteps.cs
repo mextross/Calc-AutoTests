@@ -54,7 +54,7 @@ namespace Calc.Specs.Steps
         [Then(@"I should have the following (.*)")]
         public void ThenIShouldHaveTheFollowing(decimal expectedResult)
         {
-              Assert.AreEqual(expectedResult, calcData.result);
+            Assert.AreEqual(expectedResult, calcData.result);
         }
     }
 }

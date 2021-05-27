@@ -330,13 +330,13 @@ namespace Calc.Specs.Features
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Mutiplying 2 large integers")]
-        [NUnit.Framework.CategoryAttribute("multiplyingdecimals")]
+        [NUnit.Framework.CategoryAttribute("multiplyingIntegers")]
         [NUnit.Framework.TestCaseAttribute("86436", "7896", "682498656", null)]
         [NUnit.Framework.TestCaseAttribute("864360", "78960", "68249865600", null)]
         public virtual void Mutiplying2LargeIntegers(string leftNumber, string rightNumber, string result, string[] exampleTags)
         {
             string[] @__tags = new string[] {
-                    "multiplyingdecimals"};
+                    "multiplyingIntegers"};
             if ((exampleTags != null))
             {
                 @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
@@ -385,12 +385,12 @@ namespace Calc.Specs.Features
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Mutiplying 2 positive decimals")]
-        [NUnit.Framework.CategoryAttribute("multiplyingdecimals")]
+        [NUnit.Framework.CategoryAttribute("multiplyingDecimals")]
         [NUnit.Framework.TestCaseAttribute("1.52", "3.67", "5.5784", null)]
         public virtual void Mutiplying2PositiveDecimals(string leftNumber, string rightNumber, string result, string[] exampleTags)
         {
             string[] @__tags = new string[] {
-                    "multiplyingdecimals"};
+                    "multiplyingDecimals"};
             if ((exampleTags != null))
             {
                 @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
@@ -439,12 +439,12 @@ namespace Calc.Specs.Features
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Mutiplying 2 negative decimals")]
-        [NUnit.Framework.CategoryAttribute("multiplyingdecimals")]
+        [NUnit.Framework.CategoryAttribute("multiplyingDecimals")]
         [NUnit.Framework.TestCaseAttribute("-0.7", "-2.8", "1.96", null)]
         public virtual void Mutiplying2NegativeDecimals(string leftNumber, string rightNumber, string result, string[] exampleTags)
         {
             string[] @__tags = new string[] {
-                    "multiplyingdecimals"};
+                    "multiplyingDecimals"};
             if ((exampleTags != null))
             {
                 @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
@@ -493,12 +493,12 @@ namespace Calc.Specs.Features
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Mutiplying 1 positive and 1 negative decimal")]
-        [NUnit.Framework.CategoryAttribute("multiplyingdecimals")]
+        [NUnit.Framework.CategoryAttribute("multiplyingDecimals")]
         [NUnit.Framework.TestCaseAttribute("-9.5", "3.2", "-30.4", null)]
         public virtual void Mutiplying1PositiveAnd1NegativeDecimal(string leftNumber, string rightNumber, string result, string[] exampleTags)
         {
             string[] @__tags = new string[] {
-                    "multiplyingdecimals"};
+                    "multiplyingDecimals"};
             if ((exampleTags != null))
             {
                 @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));

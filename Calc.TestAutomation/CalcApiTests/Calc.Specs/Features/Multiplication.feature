@@ -85,7 +85,7 @@
     | 0          | -0          | 0      |
 
 
-  @multiplyingdecimals
+  @multiplyingIntegers
   Scenario Outline: Mutiplying 2 large integers
   Given I have a first number <leftNumber> 
   And I have a second number <rightNumber> 
@@ -98,7 +98,7 @@
     | 864360     | 78960       | 68249865600 |
 
 
-  @multiplyingdecimals
+  @multiplyingDecimals
   Scenario Outline: Mutiplying 2 positive decimals
   Given I have a first number <leftNumber> 
   And I have a second number <rightNumber> 
@@ -110,7 +110,7 @@
     | 1.52       | 3.67        | 5.5784 |
 
 
-  @multiplyingdecimals
+  @multiplyingDecimals
   Scenario Outline: Mutiplying 2 negative decimals
   Given I have a first number <leftNumber> 
   And I have a second number <rightNumber> 
@@ -122,7 +122,7 @@
     | -0.7       | -2.8        | 1.96   |
 
 
-  @multiplyingdecimals
+  @multiplyingDecimals
   Scenario Outline: Mutiplying 1 positive and 1 negative decimal
   Given I have a first number <leftNumber> 
   And I have a second number <rightNumber> 

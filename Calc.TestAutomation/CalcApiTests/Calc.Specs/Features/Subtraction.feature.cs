@@ -382,12 +382,12 @@ namespace Calc.Specs.Features
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Subtracting 2 positive decimals")]
-        [NUnit.Framework.CategoryAttribute("subtractingdecimals")]
+        [NUnit.Framework.CategoryAttribute("subtractingDecimals")]
         [NUnit.Framework.TestCaseAttribute("4.6", "8.2", "-3.6", null)]
         public virtual void Subtracting2PositiveDecimals(string leftNumber, string rightNumber, string result, string[] exampleTags)
         {
             string[] @__tags = new string[] {
-                    "subtractingdecimals"};
+                    "subtractingDecimals"};
             if ((exampleTags != null))
             {
                 @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
@@ -436,12 +436,12 @@ namespace Calc.Specs.Features
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Subtracting 2 negative decimals")]
-        [NUnit.Framework.CategoryAttribute("subtractingdecimals")]
+        [NUnit.Framework.CategoryAttribute("subtractingDecimals")]
         [NUnit.Framework.TestCaseAttribute("-1.2", "-8.5", "7.3", null)]
         public virtual void Subtracting2NegativeDecimals(string leftNumber, string rightNumber, string result, string[] exampleTags)
         {
             string[] @__tags = new string[] {
-                    "subtractingdecimals"};
+                    "subtractingDecimals"};
             if ((exampleTags != null))
             {
                 @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
@@ -490,12 +490,12 @@ namespace Calc.Specs.Features
         
         [NUnit.Framework.TestAttribute()]
         [NUnit.Framework.DescriptionAttribute("Subtracting 1 positive and 1 negative decimal")]
-        [NUnit.Framework.CategoryAttribute("subtractingdecimals")]
+        [NUnit.Framework.CategoryAttribute("subtractingDecimals")]
         [NUnit.Framework.TestCaseAttribute("8.1", "-4.6", "12.7", null)]
         public virtual void Subtracting1PositiveAnd1NegativeDecimal(string leftNumber, string rightNumber, string result, string[] exampleTags)
         {
             string[] @__tags = new string[] {
-                    "subtractingdecimals"};
+                    "subtractingDecimals"};
             if ((exampleTags != null))
             {
                 @__tags = System.Linq.Enumerable.ToArray(System.Linq.Enumerable.Concat(@__tags, exampleTags));
