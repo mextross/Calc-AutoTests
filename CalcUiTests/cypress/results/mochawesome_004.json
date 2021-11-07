@@ -1,0 +1,351 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 12,
+    "passes": 3,
+    "pending": 0,
+    "failures": 9,
+    "start": "2021-05-27T23:02:17.866Z",
+    "end": "2021-05-27T23:04:05.116Z",
+    "duration": 107250,
+    "testsRegistered": 12,
+    "passPercent": 25,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "d452708e-8eca-430c-b1c5-ace9076517b7",
+      "title": "",
+      "fullFile": "cypress/integration/subtract.spec.js",
+      "file": "cypress/integration/subtract.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c0e5c00a-ad98-468d-b726-ef22fa02e49b",
+          "title": "Subtraction",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Subtract 2 positive integers",
+              "fullTitle": "Subtraction Subtract 2 positive integers",
+              "timedOut": null,
+              "duration": 1639,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "calcHomePg.Calculate(\"1\", \"-\", \"2\", \"-1\");",
+              "err": {},
+              "uuid": "481c18da-166b-42cf-b634-5b9d36e62afd",
+              "parentUUID": "c0e5c00a-ad98-468d-b726-ef22fa02e49b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "EF: Subtract 2 negative integers",
+              "fullTitle": "Subtraction EF: Subtract 2 negative integers",
+              "timedOut": null,
+              "duration": 11233,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "calcHomePg.Calculate(\"-34\", \"-\", \"-58\", \"24\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: expected '<input.result>' to have value '24', but the value was '-24'",
+                "estack": "AssertionError: Timed out retrying after 10000ms: expected '<input.result>' to have value '24', but the value was '-24'\n    at calcHomePage.checkResult (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\subtract.spec.js:186:20)\n    at calcHomePage.Calculate (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\subtract.spec.js:194:10)\n    at Context.eval (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\subtract.spec.js:112:16)",
+                "diff": "- '-24'\n+ '24'\n"
+              },
+              "uuid": "88dee42f-610f-4d94-8023-ef19d1ef7e2d",
+              "parentUUID": "c0e5c00a-ad98-468d-b726-ef22fa02e49b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "EF: Subtract 1 positive and 1 negative integer",
+              "fullTitle": "Subtraction EF: Subtract 1 positive and 1 negative integer",
+              "timedOut": null,
+              "duration": 11543,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "calcHomePg.Calculate(\"99\", \"-\", \"-1\", \"100\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: expected '<input.result>' to have value '100', but the value was '98'",
+                "estack": "AssertionError: Timed out retrying after 10000ms: expected '<input.result>' to have value '100', but the value was '98'\n    at calcHomePage.checkResult (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\subtract.spec.js:186:20)\n    at calcHomePage.Calculate (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\subtract.spec.js:194:10)\n    at Context.eval (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\subtract.spec.js:115:16)",
+                "diff": "- '98'\n+ '100'\n"
+              },
+              "uuid": "3134ed1f-e351-4ec9-af9f-a9f3f0340d89",
+              "parentUUID": "c0e5c00a-ad98-468d-b726-ef22fa02e49b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Subtract 1 positive integer and 0",
+              "fullTitle": "Subtraction Subtract 1 positive integer and 0",
+              "timedOut": null,
+              "duration": 1604,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "calcHomePg.Calculate(\"0\", \"-\", \"123\", \"-123\");",
+              "err": {},
+              "uuid": "87977283-b38d-40de-9e94-bcf733b7a5fb",
+              "parentUUID": "c0e5c00a-ad98-468d-b726-ef22fa02e49b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "EF: Subtract 1 negative integer and 0",
+              "fullTitle": "Subtraction EF: Subtract 1 negative integer and 0",
+              "timedOut": null,
+              "duration": 11255,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "calcHomePg.Calculate(\"0\", \"-\", \"-89\", \"89\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: expected '<input.result>' to have value '89', but the value was '-89'",
+                "estack": "AssertionError: Timed out retrying after 10000ms: expected '<input.result>' to have value '89', but the value was '-89'\n    at calcHomePage.checkResult (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\subtract.spec.js:186:20)\n    at calcHomePage.Calculate (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\subtract.spec.js:194:10)\n    at Context.eval (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\subtract.spec.js:121:16)",
+                "diff": "- '-89'\n+ '89'\n"
+              },
+              "uuid": "025ec9c9-f878-4022-bd98-aabaabdea3b3",
+              "parentUUID": "c0e5c00a-ad98-468d-b726-ef22fa02e49b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "EF: Subtract 2 fractions",
+              "fullTitle": "Subtraction EF: Subtract 2 fractions",
+              "timedOut": null,
+              "duration": 11618,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "calcHomePg.Calculate(\"3/4\", \"-\", \"1/2\", \"1/4\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: expected '<input.result>' to have value '1/4', but the value was ''",
+                "estack": "AssertionError: Timed out retrying after 10000ms: expected '<input.result>' to have value '1/4', but the value was ''\n    at calcHomePage.checkResult (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\subtract.spec.js:186:20)\n    at calcHomePage.Calculate (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\subtract.spec.js:194:10)\n    at Context.eval (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\subtract.spec.js:124:16)",
+                "diff": "+ '1/4'\n"
+              },
+              "uuid": "de8ef743-4f1e-4ee5-88d2-0a4c619ff832",
+              "parentUUID": "c0e5c00a-ad98-468d-b726-ef22fa02e49b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "EF: Subtract 2 decimals",
+              "fullTitle": "Subtraction EF: Subtract 2 decimals",
+              "timedOut": null,
+              "duration": 11255,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "calcHomePg.Calculate(\"0.5\", \"-\", \"1.3\", \"-0.8\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: expected '<input.result>' to have value '-0.8', but the value was ''",
+                "estack": "AssertionError: Timed out retrying after 10000ms: expected '<input.result>' to have value '-0.8', but the value was ''\n    at calcHomePage.checkResult (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\subtract.spec.js:186:20)\n    at calcHomePage.Calculate (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\subtract.spec.js:194:10)\n    at Context.eval (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\subtract.spec.js:127:16)",
+                "diff": "+ '-0.8'\n"
+              },
+              "uuid": "4657bebf-980b-46ee-8a90-d8246e4da13e",
+              "parentUUID": "c0e5c00a-ad98-468d-b726-ef22fa02e49b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Subtract integers each 3 digits long(max input)",
+              "fullTitle": "Subtraction Subtract integers each 3 digits long(max input)",
+              "timedOut": null,
+              "duration": 1278,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "calcHomePg.Calculate(\"999\", \"-\", \"999\", \"0\");",
+              "err": {},
+              "uuid": "c078dfe2-fba0-4ee7-beab-7f265d045a66",
+              "parentUUID": "c0e5c00a-ad98-468d-b726-ef22fa02e49b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "EF: Subtract 2 exponents",
+              "fullTitle": "Subtraction EF: Subtract 2 exponents",
+              "timedOut": null,
+              "duration": 11349,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "calcHomePg.Calculate(\"2^3\", \"-\", \"2^4\", \"-8\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: expected '<input.result>' to have value '-8', but the value was ''",
+                "estack": "AssertionError: Timed out retrying after 10000ms: expected '<input.result>' to have value '-8', but the value was ''\n    at calcHomePage.checkResult (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\subtract.spec.js:186:20)\n    at calcHomePage.Calculate (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\subtract.spec.js:194:10)\n    at Context.eval (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\subtract.spec.js:133:16)",
+                "diff": "+ '-8'\n"
+              },
+              "uuid": "114397db-5358-44ed-b896-9ebff3b5464a",
+              "parentUUID": "c0e5c00a-ad98-468d-b726-ef22fa02e49b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "EF: Subtract 2 complex numbers",
+              "fullTitle": "Subtraction EF: Subtract 2 complex numbers",
+              "timedOut": null,
+              "duration": 11292,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "calcHomePg.Calculate(\"3i\", \"-\", \"7\", \"3i - 7\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: expected '<input.result>' to have value '3i - 7', but the value was ''",
+                "estack": "AssertionError: Timed out retrying after 10000ms: expected '<input.result>' to have value '3i - 7', but the value was ''\n    at calcHomePage.checkResult (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\subtract.spec.js:186:20)\n    at calcHomePage.Calculate (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\subtract.spec.js:194:10)\n    at Context.eval (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\subtract.spec.js:136:16)",
+                "diff": "+ '3i - 7'\n"
+              },
+              "uuid": "84d114ca-4315-4316-b24d-d125187eff3e",
+              "parentUUID": "c0e5c00a-ad98-468d-b726-ef22fa02e49b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "EF: Subtract 2 irrational numbers",
+              "fullTitle": "Subtraction EF: Subtract 2 irrational numbers",
+              "timedOut": null,
+              "duration": 11600,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "calcHomePg.Calculate(\"e\", \"-\", \"π\", \"-0.42331082513\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: expected '<input.result>' to have value '-0.42331082513', but the value was ''",
+                "estack": "AssertionError: Timed out retrying after 10000ms: expected '<input.result>' to have value '-0.42331082513', but the value was ''\n    at calcHomePage.checkResult (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\subtract.spec.js:186:20)\n    at calcHomePage.Calculate (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\subtract.spec.js:194:10)\n    at Context.eval (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\subtract.spec.js:139:16)",
+                "diff": "+ '-0.42331082513'\n"
+              },
+              "uuid": "6c3d5920-9e81-4443-ad89-e82c35a55675",
+              "parentUUID": "c0e5c00a-ad98-468d-b726-ef22fa02e49b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "EF: Subtract 2 algebraic expressions",
+              "fullTitle": "Subtraction EF: Subtract 2 algebraic expressions",
+              "timedOut": null,
+              "duration": 11289,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "calcHomePg.Calculate(\"2x\", \"-\", \"x\", \"x\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: expected '<input.result>' to have value 'x', but the value was ''",
+                "estack": "AssertionError: Timed out retrying after 10000ms: expected '<input.result>' to have value 'x', but the value was ''\n    at calcHomePage.checkResult (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\subtract.spec.js:186:20)\n    at calcHomePage.Calculate (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\subtract.spec.js:194:10)\n    at Context.eval (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\subtract.spec.js:142:16)",
+                "diff": "+ 'x'\n"
+              },
+              "uuid": "8838b2c3-1b6e-4314-88f3-f438d9533906",
+              "parentUUID": "c0e5c00a-ad98-468d-b726-ef22fa02e49b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "481c18da-166b-42cf-b634-5b9d36e62afd",
+            "87977283-b38d-40de-9e94-bcf733b7a5fb",
+            "c078dfe2-fba0-4ee7-beab-7f265d045a66"
+          ],
+          "failures": [
+            "88dee42f-610f-4d94-8023-ef19d1ef7e2d",
+            "3134ed1f-e351-4ec9-af9f-a9f3f0340d89",
+            "025ec9c9-f878-4022-bd98-aabaabdea3b3",
+            "de8ef743-4f1e-4ee5-88d2-0a4c619ff832",
+            "4657bebf-980b-46ee-8a90-d8246e4da13e",
+            "114397db-5358-44ed-b896-9ebff3b5464a",
+            "84d114ca-4315-4316-b24d-d125187eff3e",
+            "6c3d5920-9e81-4443-ad89-e82c35a55675",
+            "8838b2c3-1b6e-4314-88f3-f438d9533906"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 106955,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}

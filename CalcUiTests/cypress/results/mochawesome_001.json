@@ -1,0 +1,370 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 13,
+    "passes": 4,
+    "pending": 0,
+    "failures": 9,
+    "start": "2021-05-27T22:57:23.740Z",
+    "end": "2021-05-27T22:59:12.852Z",
+    "duration": 109112,
+    "testsRegistered": 13,
+    "passPercent": 30.76923076923077,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "91fe9229-6b1c-4057-9f4c-b56b32a3265e",
+      "title": "",
+      "fullFile": "cypress/integration/divide.spec.js",
+      "file": "cypress/integration/divide.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "f23ef1f9-1abd-4284-a297-465022d556a6",
+          "title": "Division UI tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Divide 2 positive integers with no remainder",
+              "fullTitle": "Division UI tests Divide 2 positive integers with no remainder",
+              "timedOut": null,
+              "duration": 2252,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "calcHomePg.Calculate(\"99\", \"/\", \"11\", \"9\");",
+              "err": {},
+              "uuid": "9ca286e3-402f-4fec-8253-eab81256cf9e",
+              "parentUUID": "f23ef1f9-1abd-4284-a297-465022d556a6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Divide 2 negative integers with no remainder",
+              "fullTitle": "Division UI tests Divide 2 negative integers with no remainder",
+              "timedOut": null,
+              "duration": 1188,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "calcHomePg.Calculate(\"-99\", \"/\", \"-11\", \"9\");",
+              "err": {},
+              "uuid": "8f8fb54e-be3b-4523-96f7-ce3289bcb1e3",
+              "parentUUID": "f23ef1f9-1abd-4284-a297-465022d556a6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "EF: Divide 1 positive and 1 negative integer",
+              "fullTitle": "Division UI tests EF: Divide 1 positive and 1 negative integer",
+              "timedOut": null,
+              "duration": 11352,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "calcHomePg.Calculate(\"-99\", \"/\", \"1\", \"-99\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: expected '<input.result>' to have value '-99', but the value was '99'",
+                "estack": "AssertionError: Timed out retrying after 10000ms: expected '<input.result>' to have value '-99', but the value was '99'\n    at calcHomePage.checkResult (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\divide.spec.js:189:20)\n    at calcHomePage.Calculate (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\divide.spec.js:197:10)\n    at Context.eval (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\divide.spec.js:115:16)",
+                "diff": "- '99'\n+ '-99'\n"
+              },
+              "uuid": "8ca72d36-2c73-456a-b09f-881bf15c04ce",
+              "parentUUID": "f23ef1f9-1abd-4284-a297-465022d556a6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "EF: Divide a dividend lesser than a divisor",
+              "fullTitle": "Division UI tests EF: Divide a dividend lesser than a divisor",
+              "timedOut": null,
+              "duration": 11519,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "calcHomePg.Calculate(\"6\", \"/\", \"5\", \"1.2\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: expected '<input.result>' to have value '1.2', but the value was '1'",
+                "estack": "AssertionError: Timed out retrying after 10000ms: expected '<input.result>' to have value '1.2', but the value was '1'\n    at calcHomePage.checkResult (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\divide.spec.js:189:20)\n    at calcHomePage.Calculate (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\divide.spec.js:197:10)\n    at Context.eval (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\divide.spec.js:118:16)",
+                "diff": "- '1'\n+ '1.2'\n"
+              },
+              "uuid": "e2fded08-4440-46d7-9821-2d9010c0a212",
+              "parentUUID": "f23ef1f9-1abd-4284-a297-465022d556a6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Divide 0 by an integer",
+              "fullTitle": "Division UI tests Divide 0 by an integer",
+              "timedOut": null,
+              "duration": 1632,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "calcHomePg.Calculate(\"0\", \"/\", \"123\", \"0\");",
+              "err": {},
+              "uuid": "de0a96fa-6c79-439f-b466-9b4fff744176",
+              "parentUUID": "f23ef1f9-1abd-4284-a297-465022d556a6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "EF: Divide an integer by zero",
+              "fullTitle": "Division UI tests EF: Divide an integer by zero",
+              "timedOut": null,
+              "duration": 11229,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "calcHomePg.Calculate(\"123\", \"/\", \"0\", \"undefined\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: expected '<input.result>' to have value 'undefined', but the value was '0'",
+                "estack": "AssertionError: Timed out retrying after 10000ms: expected '<input.result>' to have value 'undefined', but the value was '0'\n    at calcHomePage.checkResult (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\divide.spec.js:189:20)\n    at calcHomePage.Calculate (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\divide.spec.js:197:10)\n    at Context.eval (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\divide.spec.js:124:16)",
+                "diff": "- '0'\n+ 'undefined'\n"
+              },
+              "uuid": "6ddf6e96-1b9b-443a-9c93-b994ec4a4874",
+              "parentUUID": "f23ef1f9-1abd-4284-a297-465022d556a6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "EF: Divide 2 fractions",
+              "fullTitle": "Division UI tests EF: Divide 2 fractions",
+              "timedOut": null,
+              "duration": 11619,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "calcHomePg.Calculate(\"3/4\", \"/\", \"1/2\", \"3/2\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: expected '<input.result>' to have value '3/2', but the value was ''",
+                "estack": "AssertionError: Timed out retrying after 10000ms: expected '<input.result>' to have value '3/2', but the value was ''\n    at calcHomePage.checkResult (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\divide.spec.js:189:20)\n    at calcHomePage.Calculate (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\divide.spec.js:197:10)\n    at Context.eval (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\divide.spec.js:127:16)",
+                "diff": "+ '3/2'\n"
+              },
+              "uuid": "ae603216-f4f6-462e-a8bc-69533763f031",
+              "parentUUID": "f23ef1f9-1abd-4284-a297-465022d556a6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "EF: Divide 2 decimals",
+              "fullTitle": "Division UI tests EF: Divide 2 decimals",
+              "timedOut": null,
+              "duration": 11298,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "calcHomePg.Calculate(\"1.5\", \"/\", \"0.5\", \"3\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: expected '<input.result>' to have value '3', but the value was ''",
+                "estack": "AssertionError: Timed out retrying after 10000ms: expected '<input.result>' to have value '3', but the value was ''\n    at calcHomePage.checkResult (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\divide.spec.js:189:20)\n    at calcHomePage.Calculate (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\divide.spec.js:197:10)\n    at Context.eval (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\divide.spec.js:130:16)",
+                "diff": "+ '3'\n"
+              },
+              "uuid": "704c30b7-7ec3-46c9-963a-a73c6f6047ce",
+              "parentUUID": "f23ef1f9-1abd-4284-a297-465022d556a6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Divide integers each 3 digits long(max input)",
+              "fullTitle": "Division UI tests Divide integers each 3 digits long(max input)",
+              "timedOut": null,
+              "duration": 1270,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "calcHomePg.Calculate(\"999\", \"/\", \"999\", \"1\");",
+              "err": {},
+              "uuid": "8f15b4bd-aa3d-4b2e-b372-87e4f7ed02fe",
+              "parentUUID": "f23ef1f9-1abd-4284-a297-465022d556a6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "EF: Divide 2 exponents",
+              "fullTitle": "Division UI tests EF: Divide 2 exponents",
+              "timedOut": null,
+              "duration": 11352,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "calcHomePg.Calculate(\"2^4\", \"/\", \"2^3\", \"2\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: expected '<input.result>' to have value '2', but the value was ''",
+                "estack": "AssertionError: Timed out retrying after 10000ms: expected '<input.result>' to have value '2', but the value was ''\n    at calcHomePage.checkResult (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\divide.spec.js:189:20)\n    at calcHomePage.Calculate (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\divide.spec.js:197:10)\n    at Context.eval (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\divide.spec.js:136:16)",
+                "diff": "+ '2'\n"
+              },
+              "uuid": "35761409-be34-4d15-92eb-4d76a3a20fc0",
+              "parentUUID": "f23ef1f9-1abd-4284-a297-465022d556a6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "EF: Divide 2 complex numbers",
+              "fullTitle": "Division UI tests EF: Divide 2 complex numbers",
+              "timedOut": null,
+              "duration": 11253,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "calcHomePg.Calculate(\"6i\", \"/\", \"2\", \"3i\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: expected '<input.result>' to have value '3i', but the value was ''",
+                "estack": "AssertionError: Timed out retrying after 10000ms: expected '<input.result>' to have value '3i', but the value was ''\n    at calcHomePage.checkResult (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\divide.spec.js:189:20)\n    at calcHomePage.Calculate (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\divide.spec.js:197:10)\n    at Context.eval (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\divide.spec.js:139:16)",
+                "diff": "+ '3i'\n"
+              },
+              "uuid": "2e2c26f2-6e77-4f45-b9e6-254f503760eb",
+              "parentUUID": "f23ef1f9-1abd-4284-a297-465022d556a6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "EF: Divide 2 irrational numbers",
+              "fullTitle": "Division UI tests EF: Divide 2 irrational numbers",
+              "timedOut": null,
+              "duration": 11558,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "calcHomePg.Calculate(\"e\", \"/\", \"π\", \"0.86525597943\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: expected '<input.result>' to have value '0.86525597943', but the value was ''",
+                "estack": "AssertionError: Timed out retrying after 10000ms: expected '<input.result>' to have value '0.86525597943', but the value was ''\n    at calcHomePage.checkResult (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\divide.spec.js:189:20)\n    at calcHomePage.Calculate (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\divide.spec.js:197:10)\n    at Context.eval (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\divide.spec.js:142:16)",
+                "diff": "+ '0.86525597943'\n"
+              },
+              "uuid": "49eb86f4-bbe5-49ef-9faa-72edba4deca4",
+              "parentUUID": "f23ef1f9-1abd-4284-a297-465022d556a6",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "EF: Divide 2 algebraic expressions",
+              "fullTitle": "Division UI tests EF: Divide 2 algebraic expressions",
+              "timedOut": null,
+              "duration": 11275,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "calcHomePg.Calculate(\"2x\", \"/\", \"x\", \"2\");",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 10000ms: expected '<input.result>' to have value '2', but the value was ''",
+                "estack": "AssertionError: Timed out retrying after 10000ms: expected '<input.result>' to have value '2', but the value was ''\n    at calcHomePage.checkResult (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\divide.spec.js:189:20)\n    at calcHomePage.Calculate (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\divide.spec.js:197:10)\n    at Context.eval (https://calculator-web.azurewebsites.net/__cypress/tests?p=cypress\\integration\\divide.spec.js:145:16)",
+                "diff": "+ '2'\n"
+              },
+              "uuid": "dd66ba5c-7fea-4855-9652-c38fcde24f02",
+              "parentUUID": "f23ef1f9-1abd-4284-a297-465022d556a6",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "9ca286e3-402f-4fec-8253-eab81256cf9e",
+            "8f8fb54e-be3b-4523-96f7-ce3289bcb1e3",
+            "de0a96fa-6c79-439f-b466-9b4fff744176",
+            "8f15b4bd-aa3d-4b2e-b372-87e4f7ed02fe"
+          ],
+          "failures": [
+            "8ca72d36-2c73-456a-b09f-881bf15c04ce",
+            "e2fded08-4440-46d7-9821-2d9010c0a212",
+            "6ddf6e96-1b9b-443a-9c93-b994ec4a4874",
+            "ae603216-f4f6-462e-a8bc-69533763f031",
+            "704c30b7-7ec3-46c9-963a-a73c6f6047ce",
+            "35761409-be34-4d15-92eb-4d76a3a20fc0",
+            "2e2c26f2-6e77-4f45-b9e6-254f503760eb",
+            "49eb86f4-bbe5-49ef-9faa-72edba4deca4",
+            "dd66ba5c-7fea-4855-9652-c38fcde24f02"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 108797,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "6.2.2"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "5.2.0"
+    }
+  }
+}
